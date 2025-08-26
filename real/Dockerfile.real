@@ -1,0 +1,84 @@
+# Base image for ROS 2 Humble (ARM64)
+FROM arm64v8/ros:humble-ros-base
+
+# Restore default ARM Ubuntu sources
+RUN echo "deb http://ports.ubuntu.com/ubuntu-ports jammy main restricted universe multiverse" > /etc/apt/sources.list && \
+    echo "deb http://ports.ubuntu.com/ubuntu-ports jammy-updates main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb http://ports.ubuntu.com/ubuntu-ports jammy-security main restricted universe multiverse" >> /etc/apt/sources.list && \
+    apt-get update && apt-get install -y software-properties-common
+
+
+
+# Install build tools, ROS 2 dependencies, and other required libraries
+RUN apt-get update && apt-get install -y \
+    apt-utils \
+    python3-pip \
+    python3-rosdep \
+    python3-colcon-common-extensions \
+    build-essential \
+    git \
+    libserial-dev \
+    libboost-all-dev \
+    libpcl-dev \
+    libpcap-dev \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers \
+    ros-humble-joint-state-publisher \
+    ros-humble-robot-state-publisher \
+    ros-humble-robot-localization \
+    ros-humble-xacro \
+    ros-humble-tf2-ros \
+    ros-humble-tf2-tools \
+    ros-humble-pcl-conversions \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install pyserial && rm -rf /var/lib/apt/lists/*
+
+
+RUN apt-get update && apt-get install -y \   
+	 ros-humble-v4l2-camera \    
+	ros-humble-image-transport-plugins \   
+	 v4l-utils \   
+	 && rm -rf /var/lib/apt/lists/*
+# Setup rosdep
+# Install SLAM packages (e.g., slam_toolbox)
+RUN sudo apt update && apt install -y \
+    ros-humble-cartographer \
+    ros-humble-nav2-rviz-plugins \
+    ros-humble-cartographer-ros \
+    ros-humble-cartographer-ros-msgs \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN apt update && apt install -y \
+    ros-humble-navigation2 \
+    ros-humble-nav2-bringup \
+    ros-humble-nav2-rviz-plugins \
+    ros-humble-turtlebot3-msgs \
+    ros-humble-tf-transformations \
+    ros-humble-rviz2 \
+    && rm -rf /var/lib/apt/lists/*
+RUN rosdep update
+
+# Create workspace and copy source files
+WORKDIR /ros2_ws
+COPY install ./install
+COPY build ./build
+COPY log ./log
+COPY src ./src
+SHELL ["/bin/bash", "-c"]
+
+# Clean previous build cache before compiling
+#RUN source /opt/ros/humble/setup.sh && \ 
+#  rm -rf build/ install/ log/ && \
+#   colcon build --packages-select lslidar_msgs &&\
+#   source install/setup.bash && \   
+#   colcon build --packages-select lslidar_driver --event-handlers console_direct+ --parallel-workers 1 && \   
+#   source  install/setup.bash && \   
+#   colcon build 
+# Source ROS & workspace on container start
+
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && \
+    echo "source /ros2_ws/install/setup.bash" >> ~/.bashrc
+
+# Default command: launch robot drivers
+CMD ["ros2", "launch", "fastbot_bringup", "bringup.launch.xml"]

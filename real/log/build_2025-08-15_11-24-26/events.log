@@ -1,0 +1,979 @@
+[0.000000] (-) TimerEvent: {}
+[0.001695] (fastbot_bringup) JobQueued: {'identifier': 'fastbot_bringup', 'dependencies': OrderedDict()}
+[0.002281] (fastbot_description) JobQueued: {'identifier': 'fastbot_description', 'dependencies': OrderedDict()}
+[0.002377] (fastbot_slam_real) JobQueued: {'identifier': 'fastbot_slam_real', 'dependencies': OrderedDict()}
+[0.002993] (lslidar_msgs) JobQueued: {'identifier': 'lslidar_msgs', 'dependencies': OrderedDict()}
+[0.003188] (serial_motor_msgs) JobQueued: {'identifier': 'serial_motor_msgs', 'dependencies': OrderedDict()}
+[0.003469] (lslidar_driver) JobQueued: {'identifier': 'lslidar_driver', 'dependencies': OrderedDict([('lslidar_msgs', '/home/fastbot/ros2_ws/real/install/lslidar_msgs')])}
+[0.003637] (serial_motor) JobQueued: {'identifier': 'serial_motor', 'dependencies': OrderedDict([('serial_motor_msgs', '/home/fastbot/ros2_ws/real/install/serial_motor_msgs')])}
+[0.003742] (lslidar_msgs) JobStarted: {'identifier': 'lslidar_msgs'}
+[0.048958] (serial_motor_msgs) JobStarted: {'identifier': 'serial_motor_msgs'}
+[0.072467] (fastbot_bringup) JobStarted: {'identifier': 'fastbot_bringup'}
+[0.095138] (fastbot_description) JobStarted: {'identifier': 'fastbot_description'}
+[0.098959] (-) TimerEvent: {}
+[0.125257] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'cmake'}
+[0.128424] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'build'}
+[0.131064] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fastbot/ros2_ws/real/build/lslidar_msgs', '--', '-j4', '-l4'], 'cwd': '/home/fastbot/ros2_ws/real/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/lslidar_msgs'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.144388] (serial_motor_msgs) JobProgress: {'identifier': 'serial_motor_msgs', 'progress': 'cmake'}
+[0.147790] (serial_motor_msgs) JobProgress: {'identifier': 'serial_motor_msgs', 'progress': 'build'}
+[0.148954] (serial_motor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fastbot/ros2_ws/real/build/serial_motor_msgs', '--', '-j4', '-l4'], 'cwd': '/home/fastbot/ros2_ws/real/build/serial_motor_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/serial_motor_msgs'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.158961] (fastbot_bringup) JobProgress: {'identifier': 'fastbot_bringup', 'progress': 'cmake'}
+[0.161149] (fastbot_bringup) JobProgress: {'identifier': 'fastbot_bringup', 'progress': 'build'}
+[0.162029] (fastbot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fastbot/ros2_ws/real/build/fastbot_bringup', '--', '-j4', '-l4'], 'cwd': '/home/fastbot/ros2_ws/real/build/fastbot_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/fastbot_bringup'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.181031] (fastbot_description) JobProgress: {'identifier': 'fastbot_description', 'progress': 'cmake'}
+[0.184442] (fastbot_description) JobProgress: {'identifier': 'fastbot_description', 'progress': 'build'}
+[0.185832] (fastbot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fastbot/ros2_ws/real/build/fastbot_description', '--', '-j4', '-l4'], 'cwd': '/home/fastbot/ros2_ws/real/build/fastbot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/fastbot_description'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.202856] (-) TimerEvent: {}
+[0.304854] (-) TimerEvent: {}
+[0.323102] (fastbot_description) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/fastbot_description/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/fastbot_description where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[0.324209] (fastbot_bringup) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/fastbot_bringup/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/fastbot_bringup where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[0.325028] (lslidar_msgs) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/lslidar_msgs/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/lslidar_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[0.328866] (serial_motor_msgs) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/serial_motor_msgs/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/serial_motor_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[0.405083] (-) TimerEvent: {}
+[0.506691] (-) TimerEvent: {}
+[0.562866] (fastbot_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.563628] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.564371] (fastbot_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.564981] (serial_motor_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.606993] (-) TimerEvent: {}
+[0.708806] (-) TimerEvent: {}
+[0.810755] (-) TimerEvent: {}
+[0.915161] (-) TimerEvent: {}
+[1.017130] (-) TimerEvent: {}
+[1.118799] (-) TimerEvent: {}
+[1.219958] (-) TimerEvent: {}
+[1.321136] (-) TimerEvent: {}
+[1.423127] (-) TimerEvent: {}
+[1.528021] (-) TimerEvent: {}
+[1.631827] (-) TimerEvent: {}
+[1.634800] (fastbot_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.635858] (fastbot_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.636493] (serial_motor_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.637088] (lslidar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.681131] (serial_motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.703338] (serial_motor_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.732052] (-) TimerEvent: {}
+[1.833410] (-) TimerEvent: {}
+[1.886550] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.900341] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.933555] (-) TimerEvent: {}
+[1.941526] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.996835] (serial_motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.034080] (-) TimerEvent: {}
+[2.048291] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.103492] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.132060] (fastbot_bringup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.134218] (-) TimerEvent: {}
+[2.143291] (fastbot_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.144494] (fastbot_bringup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.150365] (fastbot_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.153606] (fastbot_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.155997] (fastbot_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.163262] (serial_motor_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.176478] (fastbot_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.188932] (fastbot_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.199585] (fastbot_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[2.215256] (fastbot_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/fastbot/ros2_ws/build/fastbot_bringup\n'}
+[2.234417] (-) TimerEvent: {}
+[2.295553] (fastbot_description) StdoutLine: {'line': b'-- Generating done\n'}
+[2.312422] (fastbot_description) StdoutLine: {'line': b'-- Build files have been written to: /home/fastbot/ros2_ws/build/fastbot_description\n'}
+[2.325045] (lslidar_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.334690] (-) TimerEvent: {}
+[2.374078] (fastbot_bringup) CommandEnded: {'returncode': 0}
+[2.375706] (fastbot_bringup) JobProgress: {'identifier': 'fastbot_bringup', 'progress': 'install'}
+[2.416848] (fastbot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fastbot/ros2_ws/real/build/fastbot_bringup'], 'cwd': '/home/fastbot/ros2_ws/real/build/fastbot_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/fastbot_bringup'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[2.426041] (fastbot_description) CommandEnded: {'returncode': 0}
+[2.429068] (fastbot_description) JobProgress: {'identifier': 'fastbot_description', 'progress': 'install'}
+[2.430205] (fastbot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fastbot/ros2_ws/real/build/fastbot_description'], 'cwd': '/home/fastbot/ros2_ws/real/build/fastbot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/fastbot_description'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[2.441663] (-) TimerEvent: {}
+[2.455468] (fastbot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.456370] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/launch\n'}
+[2.457186] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/launch/bringup.launch.xml\n'}
+[2.463853] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/ament_index/resource_index/package_run_dependencies/fastbot_bringup\n'}
+[2.464530] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/ament_index/resource_index/parent_prefix_path/fastbot_bringup\n'}
+[2.465209] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/ament_prefix_path.sh\n'}
+[2.466480] (fastbot_bringup) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/ament_prefix_path.dsv\n'}
+[2.467468] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/path.sh\n'}
+[2.468342] (fastbot_bringup) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/path.dsv\n'}
+[2.470398] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.bash\n'}
+[2.471114] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.sh\n'}
+[2.471802] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.zsh\n'}
+[2.472837] (fastbot_bringup) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.dsv\n'}
+[2.473991] (fastbot_bringup) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/package.dsv\n'}
+[2.475456] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/ament_index/resource_index/packages/fastbot_bringup\n'}
+[2.477110] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/cmake/fastbot_bringupConfig.cmake\n'}
+[2.477701] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/cmake/fastbot_bringupConfig-version.cmake\n'}
+[2.478383] (fastbot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.480051] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/launch\n'}
+[2.482373] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/launch/robot_state_publisher.launch.py\n'}
+[2.484370] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape\n'}
+[2.487879] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/robot.urdf\n'}
+[2.488689] (fastbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/package.xml\n'}
+[2.495330] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/fastbot.xacro\n'}
+[2.497976] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets\n'}
+[2.500108] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/base_link.part\n'}
+[2.502779] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/raspicam.part\n'}
+[2.503500] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/lslidar_n10.part\n'}
+[2.504164] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/wheel_d65x25_v1.stl\n'}
+[2.504978] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/tire_d65x25_v1.part\n'}
+[2.505774] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/tire_d65x25_v1.stl\n'}
+[2.506615] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/fastbot_motor.stl\n'}
+[2.507316] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/raspicam.stl\n'}
+[2.508204] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/pololu_ball_caster.part\n'}
+[2.508684] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/wheel_d65x25_v1.part\n'}
+[2.509203] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/fastbot_motor.part\n'}
+[2.509659] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/base_link.stl\n'}
+[2.510105] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/lslidar_n10.stl\n'}
+[2.510793] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/pololu_ball_caster.stl\n'}
+[2.511441] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/config.json\n'}
+[2.512002] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/api-keys.sh\n'}
+[2.512376] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/ament_index/resource_index/package_run_dependencies/fastbot_description\n'}
+[2.512791] (fastbot_bringup) CommandEnded: {'returncode': 0}
+[2.514034] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/ament_index/resource_index/parent_prefix_path/fastbot_description\n'}
+[2.514638] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/ament_prefix_path.sh\n'}
+[2.515048] (fastbot_description) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/ament_prefix_path.dsv\n'}
+[2.515403] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/path.sh\n'}
+[2.515892] (fastbot_description) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/path.dsv\n'}
+[2.516630] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.bash\n'}
+[2.517153] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.sh\n'}
+[2.517650] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.zsh\n'}
+[2.518291] (fastbot_description) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.dsv\n'}
+[2.518977] (fastbot_description) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/package.dsv\n'}
+[2.520176] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/ament_index/resource_index/packages/fastbot_description\n'}
+[2.521761] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/cmake/fastbot_descriptionConfig.cmake\n'}
+[2.524420] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/cmake/fastbot_descriptionConfig-version.cmake\n'}
+[2.525726] (fastbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/package.xml\n'}
+[2.542126] (-) TimerEvent: {}
+[2.611286] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.642862] (-) TimerEvent: {}
+[2.653556] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.669315] (fastbot_bringup) JobEnded: {'identifier': 'fastbot_bringup', 'rc': 0}
+[2.677599] (fastbot_slam_real) JobStarted: {'identifier': 'fastbot_slam_real'}
+[2.708397] (fastbot_description) CommandEnded: {'returncode': 0}
+[2.744135] (-) TimerEvent: {}
+[2.782187] (fastbot_description) JobEnded: {'identifier': 'fastbot_description', 'rc': 0}
+[2.787918] (fastbot_slam_real) JobProgress: {'identifier': 'fastbot_slam_real', 'progress': 'cmake'}
+[2.790975] (fastbot_slam_real) JobProgress: {'identifier': 'fastbot_slam_real', 'progress': 'build'}
+[2.792080] (fastbot_slam_real) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fastbot/ros2_ws/real/build/fastbot_slam_real', '--', '-j4', '-l4'], 'cwd': '/home/fastbot/ros2_ws/real/build/fastbot_slam_real', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/fastbot_slam_real'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[2.844501] (-) TimerEvent: {}
+[2.946470] (-) TimerEvent: {}
+[2.998205] (fastbot_slam_real) CommandEnded: {'returncode': 0}
+[3.000057] (fastbot_slam_real) JobProgress: {'identifier': 'fastbot_slam_real', 'progress': 'install'}
+[3.000308] (fastbot_slam_real) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fastbot/ros2_ws/real/build/fastbot_slam_real'], 'cwd': '/home/fastbot/ros2_ws/real/build/fastbot_slam_real', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/fastbot_slam_real'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[3.046780] (-) TimerEvent: {}
+[3.048984] (fastbot_slam_real) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.050153] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch\n'}
+[3.051393] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/cartographer.launch.py\n'}
+[3.052595] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/localization.launch.py\n'}
+[3.053285] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/map_server.launch.py\n'}
+[3.054567] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/pathplanner.launch.py\n'}
+[3.055679] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config\n'}
+[3.056621] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/recovery.yaml\n'}
+[3.057573] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/planner_server.yaml\n'}
+[3.058651] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/cartographer.lua\n'}
+[3.060147] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/controller.yaml\n'}
+[3.061144] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/behavior.xml\n'}
+[3.061908] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/amcl_config.yaml\n'}
+[3.062452] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/bt_navigator.yaml\n'}
+[3.064208] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps\n'}
+[3.066258] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment2.pgm\n'}
+[3.068776] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment.pgm\n'}
+[3.070809] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment_rotated2.pgm\n'}
+[3.072890] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/cozy_room.pgm\n'}
+[3.075372] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment2.yaml\n'}
+[3.082357] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/cozy_room.yaml\n'}
+[3.084435] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_indoor_scenario_edited_map_hector_mapping.pgm\n'}
+[3.086284] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment_rotated.pgm\n'}
+[3.088219] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_indoor_scenario_edited_map_hector_mapping.yaml\n'}
+[3.089587] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment.yaml\n'}
+[3.090468] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/rviz\n'}
+[3.091845] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/rviz/nav.rviz\n'}
+[3.103873] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/ament_index/resource_index/package_run_dependencies/fastbot_slam_real\n'}
+[3.105028] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/ament_index/resource_index/parent_prefix_path/fastbot_slam_real\n'}
+[3.106073] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/ament_prefix_path.sh\n'}
+[3.108336] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/ament_prefix_path.dsv\n'}
+[3.110356] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/path.sh\n'}
+[3.111387] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/path.dsv\n'}
+[3.112272] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.bash\n'}
+[3.113542] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.sh\n'}
+[3.115135] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.zsh\n'}
+[3.119301] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.dsv\n'}
+[3.123915] (fastbot_slam_real) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.dsv\n'}
+[3.125022] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/ament_index/resource_index/packages/fastbot_slam_real\n'}
+[3.127194] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/cmake/fastbot_slam_realConfig.cmake\n'}
+[3.127876] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/cmake/fastbot_slam_realConfig-version.cmake\n'}
+[3.128616] (fastbot_slam_real) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.xml\n'}
+[3.130703] (fastbot_slam_real) CommandEnded: {'returncode': 0}
+[3.146917] (-) TimerEvent: {}
+[3.181268] (fastbot_slam_real) JobEnded: {'identifier': 'fastbot_slam_real', 'rc': 0}
+[3.247084] (-) TimerEvent: {}
+[3.348104] (-) TimerEvent: {}
+[3.449185] (-) TimerEvent: {}
+[3.549950] (-) TimerEvent: {}
+[3.650847] (-) TimerEvent: {}
+[3.751870] (-) TimerEvent: {}
+[3.768302] (serial_motor_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.852083] (-) TimerEvent: {}
+[3.953039] (-) TimerEvent: {}
+[4.053862] (-) TimerEvent: {}
+[4.154711] (-) TimerEvent: {}
+[4.255638] (-) TimerEvent: {}
+[4.261634] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.355815] (-) TimerEvent: {}
+[4.456569] (-) TimerEvent: {}
+[4.557336] (-) TimerEvent: {}
+[4.658040] (-) TimerEvent: {}
+[4.736736] (serial_motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.758237] (-) TimerEvent: {}
+[4.859119] (-) TimerEvent: {}
+[4.960133] (-) TimerEvent: {}
+[5.060842] (-) TimerEvent: {}
+[5.161574] (-) TimerEvent: {}
+[5.262432] (-) TimerEvent: {}
+[5.363932] (-) TimerEvent: {}
+[5.465063] (-) TimerEvent: {}
+[5.565939] (-) TimerEvent: {}
+[5.667540] (-) TimerEvent: {}
+[5.768821] (-) TimerEvent: {}
+[5.870055] (-) TimerEvent: {}
+[5.971289] (-) TimerEvent: {}
+[5.985711] (serial_motor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.071598] (-) TimerEvent: {}
+[6.115013] (serial_motor_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.152858] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.171729] (-) TimerEvent: {}
+[6.247215] (serial_motor_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.248297] (serial_motor_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.248830] (serial_motor_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[6.271905] (-) TimerEvent: {}
+[6.373090] (-) TimerEvent: {}
+[6.474156] (-) TimerEvent: {}
+[6.574849] (-) TimerEvent: {}
+[6.675697] (-) TimerEvent: {}
+[6.776760] (-) TimerEvent: {}
+[6.842965] (serial_motor_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.877019] (-) TimerEvent: {}
+[6.977826] (-) TimerEvent: {}
+[6.982008] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.078107] (-) TimerEvent: {}
+[7.098356] (lslidar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[7.178248] (-) TimerEvent: {}
+[7.215589] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.216227] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[7.216640] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[7.246681] (serial_motor_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[7.278454] (-) TimerEvent: {}
+[7.302629] (serial_motor_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/fastbot/ros2_ws/build/serial_motor_msgs\n'}
+[7.370278] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.378727] (-) TimerEvent: {}
+[7.389353] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.401702] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.419798] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_generator_c\x1b[0m\n'}
+[7.451967] (serial_motor_msgs) StdoutLine: {'line': b'[  2%] Built target serial_motor_msgs__cpp\n'}
+[7.458229] (lslidar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.479846] (-) TimerEvent: {}
+[7.512223] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.515546] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[7.528376] (serial_motor_msgs) StdoutLine: {'line': b'[ 12%] Built target serial_motor_msgs__rosidl_generator_c\n'}
+[7.542536] (serial_motor_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_serial_motor_msgs\n'}
+[7.580092] (-) TimerEvent: {}
+[7.592096] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[7.619186] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[7.627139] (serial_motor_msgs) StdoutLine: {'line': b'[ 23%] Built target serial_motor_msgs__rosidl_typesupport_cpp\n'}
+[7.628840] (serial_motor_msgs) StdoutLine: {'line': b'[ 34%] Built target serial_motor_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.680393] (-) TimerEvent: {}
+[7.694202] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.696369] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[7.710016] (serial_motor_msgs) StdoutLine: {'line': b'[ 44%] Built target serial_motor_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.717246] (serial_motor_msgs) StdoutLine: {'line': b'[ 55%] Built target serial_motor_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.756017] (serial_motor_msgs) StdoutLine: {'line': b'[ 65%] Built target serial_motor_msgs__rosidl_typesupport_c\n'}
+[7.775652] (serial_motor_msgs) StdoutLine: {'line': b'[ 76%] Built target serial_motor_msgs__rosidl_typesupport_introspection_c\n'}
+[7.780572] (-) TimerEvent: {}
+[7.869549] (serial_motor_msgs) StdoutLine: {'line': b'[ 76%] Built target serial_motor_msgs\n'}
+[7.880769] (-) TimerEvent: {}
+[7.964579] (serial_motor_msgs) StdoutLine: {'line': b'[ 78%] Built target serial_motor_msgs__py\n'}
+[7.975058] (lslidar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[7.981011] (-) TimerEvent: {}
+[8.026127] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_generator_py\x1b[0m\n'}
+[8.051079] (lslidar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/fastbot/ros2_ws/build/lslidar_msgs\n'}
+[8.081216] (-) TimerEvent: {}
+[8.121986] (serial_motor_msgs) StdoutLine: {'line': b'[ 87%] Built target serial_motor_msgs__rosidl_generator_py\n'}
+[8.181493] (-) TimerEvent: {}
+[8.211967] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[8.222807] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[8.262919] (serial_motor_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_motor_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[8.281740] (-) TimerEvent: {}
+[8.293904] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_generator_c\x1b[0m\n'}
+[8.343200] (lslidar_msgs) StdoutLine: {'line': b'[  1%] Built target lslidar_msgs__cpp\n'}
+[8.345152] (serial_motor_msgs) StdoutLine: {'line': b'[ 91%] Built target serial_motor_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[8.381946] (-) TimerEvent: {}
+[8.382880] (serial_motor_msgs) StdoutLine: {'line': b'[ 95%] Built target serial_motor_msgs__rosidl_typesupport_c__pyext\n'}
+[8.425475] (lslidar_msgs) StdoutLine: {'line': b'[ 12%] Built target lslidar_msgs__rosidl_generator_c\n'}
+[8.437600] (serial_motor_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.439573] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[8.472834] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[8.482161] (-) TimerEvent: {}
+[8.509151] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[8.531497] (lslidar_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_lslidar_msgs\n'}
+[8.569829] (lslidar_msgs) StdoutLine: {'line': b'[ 23%] Built target lslidar_msgs__rosidl_typesupport_cpp\n'}
+[8.582432] (-) TimerEvent: {}
+[8.598275] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.603669] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[8.639856] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[8.652696] (lslidar_msgs) StdoutLine: {'line': b'[ 46%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.662639] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[8.682652] (-) TimerEvent: {}
+[8.733241] (lslidar_msgs) StdoutLine: {'line': b'[ 57%] Built target lslidar_msgs__rosidl_typesupport_introspection_c\n'}
+[8.745063] (lslidar_msgs) StdoutLine: {'line': b'[ 68%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[8.759493] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_c\n'}
+[8.782841] (-) TimerEvent: {}
+[8.857246] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs\n'}
+[8.883024] (-) TimerEvent: {}
+[8.957102] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] Built target lslidar_msgs__py\n'}
+[8.983224] (-) TimerEvent: {}
+[9.019792] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_generator_py\x1b[0m\n'}
+[9.083508] (-) TimerEvent: {}
+[9.105769] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] Built target lslidar_msgs__rosidl_generator_py\n'}
+[9.169843] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[9.183793] (-) TimerEvent: {}
+[9.188388] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[9.205401] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[9.246651] (lslidar_msgs) StdoutLine: {'line': b'[ 93%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.266325] (lslidar_msgs) StdoutLine: {'line': b'[ 96%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[9.283983] (-) TimerEvent: {}
+[9.303150] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_c__pyext\n'}
+[9.384161] (-) TimerEvent: {}
+[9.473502] (serial_motor_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[9.477331] (serial_motor_msgs) StdoutLine: {'line': b'writing serial_motor_msgs.egg-info/PKG-INFO\n'}
+[9.478570] (serial_motor_msgs) StdoutLine: {'line': b'writing dependency_links to serial_motor_msgs.egg-info/dependency_links.txt\n'}
+[9.479865] (serial_motor_msgs) StdoutLine: {'line': b'writing top-level names to serial_motor_msgs.egg-info/top_level.txt\n'}
+[9.484309] (-) TimerEvent: {}
+[9.493773] (serial_motor_msgs) StdoutLine: {'line': b"reading manifest file 'serial_motor_msgs.egg-info/SOURCES.txt'\n"}
+[9.497342] (serial_motor_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_msgs.egg-info/SOURCES.txt'\n"}
+[9.584591] (-) TimerEvent: {}
+[9.642147] (serial_motor_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_serial_motor_msgs_egg\n'}
+[9.684800] (-) TimerEvent: {}
+[9.687038] (serial_motor_msgs) CommandEnded: {'returncode': 0}
+[9.689661] (serial_motor_msgs) JobProgress: {'identifier': 'serial_motor_msgs', 'progress': 'install'}
+[9.690554] (serial_motor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fastbot/ros2_ws/real/build/serial_motor_msgs'], 'cwd': '/home/fastbot/ros2_ws/real/build/serial_motor_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/serial_motor_msgs'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[9.725875] (serial_motor_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.727492] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_msgs\n'}
+[9.729085] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs\n'}
+[9.730127] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg\n'}
+[9.731281] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/encoder_vals.h\n'}
+[9.731894] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/motor_commands.h\n'}
+[9.732467] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/motor_vels.h\n'}
+[9.732988] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.733368] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail\n'}
+[9.733863] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__functions.h\n'}
+[9.734434] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__functions.c\n'}
+[9.735086] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__functions.c\n'}
+[9.735683] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__struct.h\n'}
+[9.736271] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__functions.c\n'}
+[9.736790] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__struct.h\n'}
+[9.737307] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__type_support.h\n'}
+[9.737978] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__functions.h\n'}
+[9.738593] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__functions.h\n'}
+[9.739172] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__struct.h\n'}
+[9.739592] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__type_support.h\n'}
+[9.739980] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__type_support.h\n'}
+[9.740369] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/library_path.sh\n'}
+[9.740731] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/library_path.dsv\n'}
+[9.741257] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_generator_c.so\n'}
+[9.742433] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs\n'}
+[9.743059] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg\n'}
+[9.743561] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.744057] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail\n'}
+[9.744558] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h\n'}
+[9.745160] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h\n'}
+[9.745625] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__rosidl_typesupport_fastrtps_c.h\n'}
+[9.748463] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[9.749757] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs\n'}
+[9.750309] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg\n'}
+[9.750889] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail\n'}
+[9.751441] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__type_support.c\n'}
+[9.752051] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h\n'}
+[9.752567] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__type_support.c\n'}
+[9.753088] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__type_support.c\n'}
+[9.753715] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__rosidl_typesupport_introspection_c.h\n'}
+[9.754093] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h\n'}
+[9.754458] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.755058] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_typesupport_introspection_c.so\n'}
+[9.756890] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_typesupport_c.so\n'}
+[9.758060] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs\n'}
+[9.758716] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg\n'}
+[9.759295] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/motor_commands.hpp\n'}
+[9.759934] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/encoder_vals.hpp\n'}
+[9.760335] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/motor_vels.hpp\n'}
+[9.760931] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail\n'}
+[9.761459] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__type_support.hpp\n'}
+[9.761974] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__traits.hpp\n'}
+[9.762614] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__struct.hpp\n'}
+[9.763042] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__traits.hpp\n'}
+[9.763417] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__struct.hpp\n'}
+[9.763846] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__traits.hpp\n'}
+[9.764562] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__type_support.hpp\n'}
+[9.765050] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__builder.hpp\n'}
+[9.765674] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__builder.hpp\n'}
+[9.766067] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__struct.hpp\n'}
+[9.766687] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__builder.hpp\n'}
+[9.767279] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__type_support.hpp\n'}
+[9.767899] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[9.768514] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs\n'}
+[9.768980] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg\n'}
+[9.769320] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.769644] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail\n'}
+[9.770026] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/dds_fastrtps\n'}
+[9.770393] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.770846] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.771229] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.772160] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.773483] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs\n'}
+[9.774053] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg\n'}
+[9.774590] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail\n'}
+[9.775213] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__type_support.cpp\n'}
+[9.775772] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__type_support.cpp\n'}
+[9.776261] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__type_support.cpp\n'}
+[9.776765] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.777327] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.777748] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/include/serial_motor_msgs/serial_motor_msgs/msg/detail/motor_commands__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.780628] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[9.783637] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_typesupport_cpp.so\n'}
+[9.784995] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/pythonpath.sh\n'}
+[9.785586] (-) TimerEvent: {}
+[9.786044] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/pythonpath.dsv\n'}
+[9.786991] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs-0.0.0-py3.10.egg-info\n'}
+[9.787614] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[9.788932] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[9.790256] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[9.791612] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[9.792996] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs\n'}
+[9.793529] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/__init__.py\n'}
+[9.794846] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/_serial_motor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.795363] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/serial_motor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.795833] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/serial_motor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.796281] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/serial_motor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.796737] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg\n'}
+[9.797258] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/_encoder_vals_s.c\n'}
+[9.797734] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/__init__.py\n'}
+[9.798162] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/_motor_commands_s.c\n'}
+[9.798639] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/_motor_vels.py\n'}
+[9.798995] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/_motor_commands.py\n'}
+[9.799309] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/_encoder_vals.py\n'}
+[9.799855] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg/_motor_vels_s.c\n'}
+[9.800526] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/_serial_motor_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.801028] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/_serial_motor_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[9.801440] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/libserial_motor_msgs__rosidl_generator_py.so\n'}
+[9.885842] (-) TimerEvent: {}
+[9.965654] (serial_motor_msgs) StdoutLine: {'line': b"Listing '/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs'...\n"}
+[9.967037] (serial_motor_msgs) StdoutLine: {'line': b"Compiling '/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/__init__.py'...\n"}
+[9.968112] (serial_motor_msgs) StdoutLine: {'line': b"Listing '/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/msg'...\n"}
+[9.986074] (-) TimerEvent: {}
+[9.998135] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/serial_motor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.002177] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/serial_motor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.004656] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages/serial_motor_msgs/serial_motor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.006913] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/lib/libserial_motor_msgs__rosidl_generator_py.so\n'}
+[10.009264] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/msg/EncoderVals.idl\n'}
+[10.009940] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/msg/MotorCommands.idl\n'}
+[10.010579] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/msg/MotorVels.idl\n'}
+[10.011243] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/msg/EncoderVals.msg\n'}
+[10.011894] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/msg/MotorCommands.msg\n'}
+[10.012345] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/msg/MotorVels.msg\n'}
+[10.012921] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_msgs\n'}
+[10.013641] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_msgs\n'}
+[10.014253] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/ament_prefix_path.sh\n'}
+[10.014893] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/ament_prefix_path.dsv\n'}
+[10.016197] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/path.sh\n'}
+[10.016837] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/environment/path.dsv\n'}
+[10.018125] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/local_setup.bash\n'}
+[10.019013] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/local_setup.sh\n'}
+[10.019695] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/local_setup.zsh\n'}
+[10.020142] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/local_setup.dsv\n'}
+[10.021006] (serial_motor_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/package.dsv\n'}
+[10.022470] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/ament_index/resource_index/packages/serial_motor_msgs\n'}
+[10.024847] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_generator_cExport.cmake\n'}
+[10.025547] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.027351] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.028036] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.029785] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.030624] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.032266] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_cExport.cmake\n'}
+[10.032980] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.034785] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_generator_cppExport.cmake\n'}
+[10.036771] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.037456] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.039288] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.039944] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.041682] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[10.042342] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.044186] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_generator_pyExport.cmake\n'}
+[10.045042] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/export_serial_motor_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.045623] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[10.046128] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.046723] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.047339] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.047922] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.048529] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.049136] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.049679] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgsConfig.cmake\n'}
+[10.050252] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/cmake/serial_motor_msgsConfig-version.cmake\n'}
+[10.050873] (serial_motor_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/serial_motor_msgs/share/serial_motor_msgs/package.xml\n'}
+[10.057919] (serial_motor_msgs) CommandEnded: {'returncode': 0}
+[10.086381] (-) TimerEvent: {}
+[10.147685] (serial_motor_msgs) JobEnded: {'identifier': 'serial_motor_msgs', 'rc': 0}
+[10.153100] (serial_motor) JobStarted: {'identifier': 'serial_motor'}
+[10.186601] (-) TimerEvent: {}
+[10.192805] (lslidar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[10.196430] (lslidar_msgs) StdoutLine: {'line': b'writing lslidar_msgs.egg-info/PKG-INFO\n'}
+[10.197553] (lslidar_msgs) StdoutLine: {'line': b'writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt\n'}
+[10.199309] (lslidar_msgs) StdoutLine: {'line': b'writing top-level names to lslidar_msgs.egg-info/top_level.txt\n'}
+[10.210116] (lslidar_msgs) StdoutLine: {'line': b"reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[10.214466] (lslidar_msgs) StdoutLine: {'line': b"writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[10.286984] (-) TimerEvent: {}
+[10.359951] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_lslidar_msgs_egg\n'}
+[10.387113] (-) TimerEvent: {}
+[10.487835] (-) TimerEvent: {}
+[10.588485] (-) TimerEvent: {}
+[10.689119] (-) TimerEvent: {}
+[10.789745] (-) TimerEvent: {}
+[10.890454] (-) TimerEvent: {}
+[10.991092] (-) TimerEvent: {}
+[11.091711] (-) TimerEvent: {}
+[11.192340] (-) TimerEvent: {}
+[11.292955] (-) TimerEvent: {}
+[11.393774] (-) TimerEvent: {}
+[11.453234] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[11.456357] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'install'}
+[11.457395] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fastbot/ros2_ws/real/build/lslidar_msgs'], 'cwd': '/home/fastbot/ros2_ws/real/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/lslidar_msgs'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[11.493944] (-) TimerEvent: {}
+[11.495288] (lslidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.499435] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lslidar_msgs\n'}
+[11.510816] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[11.517261] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[11.521636] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.h\n'}
+[11.522377] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.h\n'}
+[11.523075] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.h\n'}
+[11.523593] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.524005] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.h\n'}
+[11.524406] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[11.525992] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.h\n'}
+[11.526713] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.h\n'}
+[11.527311] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.h\n'}
+[11.528113] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.h\n'}
+[11.528667] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.c\n'}
+[11.529237] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.h\n'}
+[11.530117] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.c\n'}
+[11.530663] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.h\n'}
+[11.531259] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.h\n'}
+[11.531802] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.h\n'}
+[11.532364] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.h\n'}
+[11.533024] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.c\n'}
+[11.533825] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.c\n'}
+[11.534334] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.h\n'}
+[11.534901] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.h\n'}
+[11.535356] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.h\n'}
+[11.535733] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.h\n'}
+[11.536074] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.h\n'}
+[11.536380] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.h\n'}
+[11.536711] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.c\n'}
+[11.537033] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.h\n'}
+[11.537381] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.sh\n'}
+[11.537673] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.dsv\n'}
+[11.548662] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so\n'}
+[11.549928] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[11.550621] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[11.551225] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.551803] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[11.552466] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_c.h\n'}
+[11.553184] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_c.h\n'}
+[11.553828] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[11.554256] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_c.h\n'}
+[11.554652] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_c.h\n'}
+[11.569697] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[11.570996] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[11.571612] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[11.572187] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.hpp\n'}
+[11.572963] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.hpp\n'}
+[11.573545] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.hpp\n'}
+[11.573902] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.hpp\n'}
+[11.574542] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.hpp\n'}
+[11.575087] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[11.575712] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.hpp\n'}
+[11.576321] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__builder.hpp\n'}
+[11.576912] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.hpp\n'}
+[11.577496] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__builder.hpp\n'}
+[11.578153] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.hpp\n'}
+[11.578903] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.hpp\n'}
+[11.579669] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__traits.hpp\n'}
+[11.580272] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__traits.hpp\n'}
+[11.580770] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__builder.hpp\n'}
+[11.581224] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__builder.hpp\n'}
+[11.581651] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.hpp\n'}
+[11.582170] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__traits.hpp\n'}
+[11.582631] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.hpp\n'}
+[11.583096] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.hpp\n'}
+[11.583458] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__traits.hpp\n'}
+[11.583916] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__traits.hpp\n'}
+[11.584424] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.hpp\n'}
+[11.584957] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.hpp\n'}
+[11.585557] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.hpp\n'}
+[11.585958] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__builder.hpp\n'}
+[11.586300] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[11.586717] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[11.587118] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[11.587443] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.587813] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[11.588129] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/dds_fastrtps\n'}
+[11.588414] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.588694] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.589013] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.589331] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.589619] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.594080] (-) TimerEvent: {}
+[11.596790] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.598097] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[11.598778] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[11.599333] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[11.599837] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_c.h\n'}
+[11.600387] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_c.h\n'}
+[11.600924] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.c\n'}
+[11.601518] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_c.h\n'}
+[11.602027] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_c.h\n'}
+[11.602581] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_c.h\n'}
+[11.603064] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.c\n'}
+[11.603632] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.c\n'}
+[11.604012] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.c\n'}
+[11.604352] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c\n'}
+[11.604724] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.616487] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[11.628923] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so\n'}
+[11.630183] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[11.630900] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[11.631386] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[11.632004] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp\n'}
+[11.632456] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.633054] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp\n'}
+[11.633625] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp\n'}
+[11.634024] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.634699] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp\n'}
+[11.636087] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.636630] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.637042] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp\n'}
+[11.637483] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.647489] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[11.660936] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so\n'}
+[11.662308] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.sh\n'}
+[11.663001] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.dsv\n'}
+[11.664138] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info\n'}
+[11.664757] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/PKG-INFO\n'}
+[11.666005] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/top_level.txt\n'}
+[11.667327] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[11.668769] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs-1.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[11.670323] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs\n'}
+[11.673008] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[11.674959] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[11.675596] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py\n'}
+[11.676220] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.677004] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so\n'}
+[11.677377] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.677713] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg\n'}
+[11.681028] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/__init__.py\n'}
+[11.681893] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan.py\n'}
+[11.682760] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_scan_s.c\n'}
+[11.683482] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet_s.c\n'}
+[11.684091] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop.py\n'}
+[11.684719] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep.py\n'}
+[11.685864] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point_s.c\n'}
+[11.686398] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_packet.py\n'}
+[11.687064] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_point.py\n'}
+[11.687430] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_difop_s.c\n'}
+[11.687743] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg/_lslidar_sweep_s.c\n'}
+[11.688081] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.688542] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[11.694323] (-) TimerEvent: {}
+[11.795216] (-) TimerEvent: {}
+[11.865031] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs'...\n"}
+[11.866571] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/__init__.py'...\n"}
+[11.867806] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/msg'...\n"}
+[11.895428] (-) TimerEvent: {}
+[11.900271] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.904273] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.908178] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.912829] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so\n'}
+[11.914855] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.idl\n'}
+[11.915477] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.idl\n'}
+[11.916049] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.idl\n'}
+[11.916607] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.idl\n'}
+[11.917161] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.idl\n'}
+[11.917807] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.msg\n'}
+[11.918395] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.msg\n'}
+[11.919052] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.msg\n'}
+[11.919587] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.msg\n'}
+[11.920164] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.msg\n'}
+[11.920524] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/ament_index/resource_index/package_run_dependencies/lslidar_msgs\n'}
+[11.921100] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/ament_index/resource_index/parent_prefix_path/lslidar_msgs\n'}
+[11.921820] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.sh\n'}
+[11.922429] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.dsv\n'}
+[11.923941] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/path.sh\n'}
+[11.924636] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/environment/path.dsv\n'}
+[11.925935] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.bash\n'}
+[11.926643] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.sh\n'}
+[11.927286] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.zsh\n'}
+[11.927833] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.dsv\n'}
+[11.928783] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/package.dsv\n'}
+[11.930285] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/ament_index/resource_index/packages/lslidar_msgs\n'}
+[11.932639] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport.cmake\n'}
+[11.933227] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.935079] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.935744] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.937188] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[11.938992] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.939633] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.941205] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.941818] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.943488] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[11.944266] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.945892] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.946562] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.948384] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[11.949089] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.950700] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport.cmake\n'}
+[11.951402] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[11.952028] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[11.952656] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.953529] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.954200] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.954938] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.955619] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.956268] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.956885] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig.cmake\n'}
+[11.957490] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig-version.cmake\n'}
+[11.957983] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/package.xml\n'}
+[11.964475] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[11.995587] (-) TimerEvent: {}
+[12.050939] (lslidar_msgs) JobEnded: {'identifier': 'lslidar_msgs', 'rc': 0}
+[12.056291] (lslidar_driver) JobStarted: {'identifier': 'lslidar_driver'}
+[12.095770] (-) TimerEvent: {}
+[12.096677] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'cmake'}
+[12.100708] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'build'}
+[12.102759] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/fastbot/ros2_ws/real/build/lslidar_driver', '--', '-j4', '-l4'], 'cwd': '/home/fastbot/ros2_ws/real/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/lslidar_driver'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[12.142346] (lslidar_driver) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/lslidar_driver/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/lslidar_driver where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[12.195965] (-) TimerEvent: {}
+[12.297623] (-) TimerEvent: {}
+[12.368268] (lslidar_driver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[12.383960] (lslidar_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[12.397832] (-) TimerEvent: {}
+[12.498688] (-) TimerEvent: {}
+[12.599494] (-) TimerEvent: {}
+[12.700256] (-) TimerEvent: {}
+[12.801039] (-) TimerEvent: {}
+[12.901888] (-) TimerEvent: {}
+[13.002762] (-) TimerEvent: {}
+[13.103806] (-) TimerEvent: {}
+[13.204454] (-) TimerEvent: {}
+[13.221416] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[13.232637] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[13.257662] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[13.301035] (lslidar_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.304632] (-) TimerEvent: {}
+[13.357037] (lslidar_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[13.404797] (-) TimerEvent: {}
+[13.505486] (-) TimerEvent: {}
+[13.567662] (lslidar_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[13.586814] (lslidar_driver) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[13.605699] (-) TimerEvent: {}
+[13.706691] (-) TimerEvent: {}
+[13.755046] (lslidar_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[13.806855] (-) TimerEvent: {}
+[13.907739] (-) TimerEvent: {}
+[14.009050] (-) TimerEvent: {}
+[14.029252] (serial_motor) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/serial_motor', 'build', '--build-base', '/home/fastbot/ros2_ws/real/build/serial_motor/build', 'install', '--record', '/home/fastbot/ros2_ws/real/build/serial_motor/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/fastbot/ros2_ws/real/src/serial_motor', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'fastbot', 'SSH_CLIENT': '192.168.1.6 56362 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/fastbot', 'CYCLONEDDS_URI': 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml', 'OLDPWD': '/home/fastbot/ros2_ws/real/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/fastbot/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'fastbot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/var/lib/theconstruct.rrl/fastdds_husarnet.xml', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble', 'SHELL': '/bin/bash', 'ROS_MASTER_URI': 'http://master:11311', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/fastbot/ros2_ws/real/build/serial_motor', 'ROS_IPV6': 'on', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.6 56362 192.168.1.100 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/fastbot/ros2_ws/real/build/serial_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'ROS_HOSTNAME': 'master', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/fastbot/ros2_ws/real/install/serial_motor_msgs'}, 'shell': False}
+[14.109195] (-) TimerEvent: {}
+[14.152327] (lslidar_driver) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[14.204203] (lslidar_driver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[14.209343] (-) TimerEvent: {}
+[14.310226] (-) TimerEvent: {}
+[14.411176] (-) TimerEvent: {}
+[14.432679] (lslidar_driver) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[14.511341] (-) TimerEvent: {}
+[14.612049] (-) TimerEvent: {}
+[14.712776] (-) TimerEvent: {}
+[14.814080] (-) TimerEvent: {}
+[14.915038] (-) TimerEvent: {}
+[15.016015] (-) TimerEvent: {}
+[15.117080] (-) TimerEvent: {}
+[15.217765] (-) TimerEvent: {}
+[15.251099] (serial_motor) StdoutLine: {'line': b'running egg_info\n'}
+[15.254729] (serial_motor) StdoutLine: {'line': b'writing ../../build/serial_motor/serial_motor.egg-info/PKG-INFO\n'}
+[15.255822] (serial_motor) StdoutLine: {'line': b'writing dependency_links to ../../build/serial_motor/serial_motor.egg-info/dependency_links.txt\n'}
+[15.256858] (serial_motor) StdoutLine: {'line': b'writing entry points to ../../build/serial_motor/serial_motor.egg-info/entry_points.txt\n'}
+[15.257570] (serial_motor) StdoutLine: {'line': b'writing requirements to ../../build/serial_motor/serial_motor.egg-info/requires.txt\n'}
+[15.258098] (serial_motor) StdoutLine: {'line': b'writing top-level names to ../../build/serial_motor/serial_motor.egg-info/top_level.txt\n'}
+[15.266293] (serial_motor) StdoutLine: {'line': b"reading manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'\n"}
+[15.270351] (serial_motor) StdoutLine: {'line': b"writing manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'\n"}
+[15.271127] (serial_motor) StdoutLine: {'line': b'running build\n'}
+[15.271650] (serial_motor) StdoutLine: {'line': b'running build_py\n'}
+[15.272284] (serial_motor) StdoutLine: {'line': b'copying serial_motor/motor_driver.py -> /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor\n'}
+[15.273772] (serial_motor) StdoutLine: {'line': b'running install\n'}
+[15.275074] (serial_motor) StdoutLine: {'line': b'running install_lib\n'}
+[15.278441] (serial_motor) StdoutLine: {'line': b'copying /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor/motor_driver.py -> /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor\n'}
+[15.281690] (serial_motor) StdoutLine: {'line': b'byte-compiling /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor/motor_driver.py to motor_driver.cpython-310.pyc\n'}
+[15.290554] (serial_motor) StdoutLine: {'line': b'running install_data\n'}
+[15.291644] (serial_motor) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.303229] (serial_motor) StdoutLine: {'line': b"removing '/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[15.304857] (serial_motor) StdoutLine: {'line': b'Copying ../../build/serial_motor/serial_motor.egg-info to /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor-0.0.0-py3.10.egg-info\n'}
+[15.310818] (serial_motor) StdoutLine: {'line': b'running install_scripts\n'}
+[15.317908] (-) TimerEvent: {}
+[15.392512] (serial_motor) StdoutLine: {'line': b'Installing motor_driver script to /home/fastbot/ros2_ws/real/install/serial_motor/lib/serial_motor\n'}
+[15.394232] (serial_motor) StdoutLine: {'line': b"writing list of installed files to '/home/fastbot/ros2_ws/real/build/serial_motor/install.log'\n"}
+[15.418139] (-) TimerEvent: {}
+[15.517378] (serial_motor) CommandEnded: {'returncode': 0}
+[15.518672] (-) TimerEvent: {}
+[15.547727] (serial_motor) JobEnded: {'identifier': 'serial_motor', 'rc': 0}
+[15.618974] (-) TimerEvent: {}
+[15.720003] (-) TimerEvent: {}
+[15.820840] (-) TimerEvent: {}
+[15.921809] (-) TimerEvent: {}
+[16.023004] (-) TimerEvent: {}
+[16.123706] (-) TimerEvent: {}
+[16.224471] (-) TimerEvent: {}
+[16.325186] (-) TimerEvent: {}
+[16.425839] (-) TimerEvent: {}
+[16.526612] (-) TimerEvent: {}
+[16.627668] (-) TimerEvent: {}
+[16.728565] (-) TimerEvent: {}
+[16.829310] (-) TimerEvent: {}
+[16.930141] (-) TimerEvent: {}
+[17.031169] (-) TimerEvent: {}
+[17.131889] (-) TimerEvent: {}
+[17.232648] (-) TimerEvent: {}
+[17.278369] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[17.305296] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[17.306319] (lslidar_driver) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[17.332809] (-) TimerEvent: {}
+[17.433552] (-) TimerEvent: {}
+[17.534347] (-) TimerEvent: {}
+[17.635033] (-) TimerEvent: {}
+[17.735759] (-) TimerEvent: {}
+[17.836442] (-) TimerEvent: {}
+[17.902897] (lslidar_driver) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[17.929247] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[17.936639] (-) TimerEvent: {}
+[17.955687] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[18.036821] (-) TimerEvent: {}
+[18.137505] (-) TimerEvent: {}
+[18.238182] (-) TimerEvent: {}
+[18.338975] (-) TimerEvent: {}
+[18.439780] (-) TimerEvent: {}
+[18.532761] (lslidar_driver) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[18.539950] (-) TimerEvent: {}
+[18.640750] (-) TimerEvent: {}
+[18.741586] (-) TimerEvent: {}
+[18.842320] (-) TimerEvent: {}
+[18.943041] (-) TimerEvent: {}
+[19.043747] (-) TimerEvent: {}
+[19.121313] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[19.143959] (-) TimerEvent: {}
+[19.244704] (-) TimerEvent: {}
+[19.345507] (-) TimerEvent: {}
+[19.446228] (-) TimerEvent: {}
+[19.546906] (-) TimerEvent: {}
+[19.647570] (-) TimerEvent: {}
+[19.688214] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[19.689594] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[19.691005] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[19.692333] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[19.693852] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[19.695306] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[19.696834] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[19.698067] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[19.699241] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[19.700926] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[19.702464] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[19.703833] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[19.705606] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[19.707416] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[19.709002] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[19.710690] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[19.712265] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[19.713808] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[19.715685] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[19.717086] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[19.720064] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[19.721216] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[19.722306] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[19.723534] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[19.725094] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[19.731787] (lslidar_driver) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[19.747755] (-) TimerEvent: {}
+[19.824422] (lslidar_driver) StdoutLine: {'line': b'-- Found lslidar_msgs: 1.2.0 (/home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake)\n'}
+[19.847967] (-) TimerEvent: {}
+[19.895002] (lslidar_driver) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[19.948133] (-) TimerEvent: {}
+[20.048770] (-) TimerEvent: {}
+[20.080746] (lslidar_driver) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[20.148951] (-) TimerEvent: {}
+[20.249639] (-) TimerEvent: {}
+[20.350543] (-) TimerEvent: {}
+[20.451218] (-) TimerEvent: {}
+[20.551876] (-) TimerEvent: {}
+[20.652635] (-) TimerEvent: {}
+[20.669030] (lslidar_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.752893] (-) TimerEvent: {}
+[20.853528] (-) TimerEvent: {}
+[20.954188] (-) TimerEvent: {}
+[21.054880] (-) TimerEvent: {}
+[21.155639] (-) TimerEvent: {}
+[21.256408] (-) TimerEvent: {}
+[21.357286] (-) TimerEvent: {}
+[21.374928] (lslidar_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[21.443275] (lslidar_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/fastbot/ros2_ws/build/lslidar_driver\n'}
+[21.457558] (-) TimerEvent: {}
+[21.558572] (-) TimerEvent: {}
+[21.659582] (-) TimerEvent: {}
+[21.665324] (lslidar_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lslidar_driver_node\x1b[0m\n'}
+[21.759729] (-) TimerEvent: {}
+[21.860455] (-) TimerEvent: {}
+[21.961626] (-) TimerEvent: {}
+[22.062684] (-) TimerEvent: {}
+[22.163781] (-) TimerEvent: {}
+[22.264798] (-) TimerEvent: {}
+[22.365630] (-) TimerEvent: {}
+[22.466559] (-) TimerEvent: {}
+[22.548775] (lslidar_driver) StdoutLine: {'line': b'[100%] Built target lslidar_driver_node\n'}
+[22.566800] (-) TimerEvent: {}
+[22.590904] (lslidar_driver) CommandEnded: {'returncode': 0}
+[22.593184] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'install'}
+[22.600169] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/fastbot/ros2_ws/real/build/lslidar_driver'], 'cwd': '/home/fastbot/ros2_ws/real/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'fastbot'), ('SSH_CLIENT', '192.168.1.6 56362 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/fastbot'), ('CYCLONEDDS_URI', 'file:///var/lib/theconstruct.rrl/cyclonedds_husarnet.xml'), ('OLDPWD', '/home/fastbot/ros2_ws/real/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/fastbot/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'fastbot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/fastbot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/var/lib/theconstruct.rrl/fastdds_husarnet.xml'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_MASTER_URI', 'http://master:11311'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/fastbot/ros2_ws/real/build/lslidar_driver'), ('ROS_IPV6', 'on'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.6 56362 192.168.1.100 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/install/serial_motor_msgs/local/lib/python3.10/dist-packages:/home/fastbot/ros2_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ROS_HOSTNAME', 'master'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble')]), 'shell': False}
+[22.629087] (lslidar_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.629659] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/launch\n'}
+[22.630617] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/launch/lslidar_double_launch.py\n'}
+[22.631152] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/launch/lslidar_launch.py\n'}
+[22.631491] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params\n'}
+[22.632008] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_1.yaml\n'}
+[22.632416] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10.yaml\n'}
+[22.633123] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_2.yaml\n'}
+[22.633491] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/rviz\n'}
+[22.634194] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz\n'}
+[22.636914] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node\n'}
+[22.638344] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver\n'}
+[22.639392] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver\n'}
+[22.639902] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh\n'}
+[22.640329] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv\n'}
+[22.641729] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/path.sh\n'}
+[22.642192] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/path.dsv\n'}
+[22.643413] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.bash\n'}
+[22.643913] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.sh\n'}
+[22.644331] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.zsh\n'}
+[22.644751] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.dsv\n'}
+[22.645831] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/package.dsv\n'}
+[22.647211] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver\n'}
+[22.648319] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.648838] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.649360] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake\n'}
+[22.649800] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake\n'}
+[22.650259] (lslidar_driver) StdoutLine: {'line': b'-- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/package.xml\n'}
+[22.655820] (lslidar_driver) CommandEnded: {'returncode': 0}
+[22.666875] (-) TimerEvent: {}
+[22.716164] (lslidar_driver) JobEnded: {'identifier': 'lslidar_driver', 'rc': 0}
+[22.719640] (-) EventReactorShutdown: {}

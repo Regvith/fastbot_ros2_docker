@@ -1,0 +1,52 @@
+[0.102s] Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_description': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_description -- -j4 -l4
+[0.151s] [0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/fastbot_description/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/fastbot_description where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.225s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.196s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.625s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.631s] -- Added test 'lint_cmake' to check CMake code style
+[1.634s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.653s] -- Added test 'xmllint' to check XML markup files
+[1.658s] -- Configuring done
+[1.681s] -- Generating done
+[1.699s] -- Build files have been written to: /home/fastbot/ros2_ws/build/fastbot_description
+[1.805s] Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_description' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_description -- -j4 -l4
+[1.815s] Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_description': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_description
+[1.853s] -- Install configuration: ""
+[1.853s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/launch
+[1.854s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/launch/robot_state_publisher.launch.py
+[1.855s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape
+[1.856s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/robot.urdf
+[1.859s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/fastbot.xacro
+[1.861s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets
+[1.863s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/base_link.part
+[1.865s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/raspicam.part
+[1.873s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/lslidar_n10.part
+[1.877s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/wheel_d65x25_v1.stl
+[1.879s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/tire_d65x25_v1.part
+[1.898s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/tire_d65x25_v1.stl
+[1.899s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/fastbot_motor.stl
+[1.901s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/raspicam.stl
+[1.903s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/pololu_ball_caster.part
+[1.904s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/wheel_d65x25_v1.part
+[1.906s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/fastbot_motor.part
+[1.907s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/base_link.stl
+[1.907s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/lslidar_n10.stl
+[1.908s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/assets/pololu_ball_caster.stl
+[1.909s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/config.json
+[1.910s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/onshape/api-keys.sh
+[1.911s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/ament_index/resource_index/package_run_dependencies/fastbot_description
+[1.911s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/ament_index/resource_index/parent_prefix_path/fastbot_description
+[1.912s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/ament_prefix_path.sh
+[1.913s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/ament_prefix_path.dsv
+[1.914s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/path.sh
+[1.917s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/environment/path.dsv
+[1.917s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.bash
+[1.920s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.sh
+[1.920s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.zsh
+[1.921s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/local_setup.dsv
+[1.922s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/package.dsv
+[1.924s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/ament_index/resource_index/packages/fastbot_description
+[1.924s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/cmake/fastbot_descriptionConfig.cmake
+[1.925s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/cmake/fastbot_descriptionConfig-version.cmake
+[1.926s] -- Up-to-date: /home/fastbot/ros2_ws/install/fastbot_description/share/fastbot_description/package.xml
+[1.932s] Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_description' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_description

@@ -1,0 +1,44 @@
+[0.075s] Invoking command in '/home/fastbot/ros2_ws/build/fastbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/install/serial_motor:/opt/ros/humble /usr/bin/cmake /home/fastbot/ros2_ws/src/fastbot_bringup -DCMAKE_INSTALL_PREFIX=/home/fastbot/ros2_ws/install/fastbot_bringup
+[1.030s] -- The C compiler identification is GNU 11.4.0
+[1.901s] -- The CXX compiler identification is GNU 11.4.0
+[1.948s] -- Detecting C compiler ABI info
+[2.374s] -- Detecting C compiler ABI info - done
+[2.400s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.401s] -- Detecting C compile features
+[2.403s] -- Detecting C compile features - done
+[2.422s] -- Detecting CXX compiler ABI info
+[2.885s] -- Detecting CXX compiler ABI info - done
+[2.923s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.924s] -- Detecting CXX compile features
+[2.926s] -- Detecting CXX compile features - done
+[2.952s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.126s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.940s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.467s] -- Added test 'lint_cmake' to check CMake code style
+[5.480s] -- Added test 'xmllint' to check XML markup files
+[5.490s] -- Configuring done
+[5.512s] -- Generating done
+[5.521s] -- Build files have been written to: /home/fastbot/ros2_ws/build/fastbot_bringup
+[5.547s] Invoked command in '/home/fastbot/ros2_ws/build/fastbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/install/serial_motor:/opt/ros/humble /usr/bin/cmake /home/fastbot/ros2_ws/src/fastbot_bringup -DCMAKE_INSTALL_PREFIX=/home/fastbot/ros2_ws/install/fastbot_bringup
+[5.549s] Invoking command in '/home/fastbot/ros2_ws/build/fastbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/install/serial_motor:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/build/fastbot_bringup -- -j4 -l4
+[5.715s] Invoked command in '/home/fastbot/ros2_ws/build/fastbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/install/serial_motor:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/build/fastbot_bringup -- -j4 -l4
+[5.760s] Invoking command in '/home/fastbot/ros2_ws/build/fastbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/install/serial_motor:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/build/fastbot_bringup
+[5.788s] -- Install configuration: ""
+[5.790s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/launch
+[5.793s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/launch/bringup.launch.xml
+[5.797s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/ament_index/resource_index/package_run_dependencies/fastbot_bringup
+[5.801s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/ament_index/resource_index/parent_prefix_path/fastbot_bringup
+[5.803s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/ament_prefix_path.sh
+[5.806s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/ament_prefix_path.dsv
+[5.809s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/path.sh
+[5.813s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/environment/path.dsv
+[5.815s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.bash
+[5.816s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.sh
+[5.817s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.zsh
+[5.819s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/local_setup.dsv
+[5.821s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/package.dsv
+[5.822s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/ament_index/resource_index/packages/fastbot_bringup
+[5.824s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/cmake/fastbot_bringupConfig.cmake
+[5.825s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/cmake/fastbot_bringupConfig-version.cmake
+[5.827s] -- Installing: /home/fastbot/ros2_ws/install/fastbot_bringup/share/fastbot_bringup/package.xml
+[5.854s] Invoked command in '/home/fastbot/ros2_ws/build/fastbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/install/serial_motor:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/build/fastbot_bringup

@@ -1,0 +1,88 @@
+[0.054s] Invoking command in '/home/fastbot/ros2_ws/real/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/lslidar_driver -- -j4 -l4
+[0.087s] [0mCMake Error: The current CMakeCache.txt directory /home/fastbot/ros2_ws/real/build/lslidar_driver/CMakeCache.txt is different than the directory /home/fastbot/ros2_ws/build/lslidar_driver where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.312s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[0.328s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.166s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.177s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.202s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.301s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.512s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.531s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.699s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.097s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.148s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[2.377s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[5.222s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.249s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.250s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[5.847s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[5.873s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.900s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.477s] -- Found Qhull version 8.0.2
+[7.065s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.632s] -- looking for PCL_COMMON
+[7.634s] -- looking for PCL_KDTREE
+[7.635s] -- looking for PCL_OCTREE
+[7.636s] -- looking for PCL_SEARCH
+[7.638s] -- looking for PCL_SAMPLE_CONSENSUS
+[7.639s] -- looking for PCL_FILTERS
+[7.641s] -- looking for PCL_2D
+[7.642s] -- looking for PCL_GEOMETRY
+[7.643s] -- looking for PCL_IO
+[7.645s] -- looking for PCL_FEATURES
+[7.646s] -- looking for PCL_ML
+[7.648s] -- looking for PCL_SEGMENTATION
+[7.650s] -- looking for PCL_VISUALIZATION
+[7.651s] -- looking for PCL_SURFACE
+[7.653s] -- looking for PCL_REGISTRATION
+[7.655s] -- looking for PCL_KEYPOINTS
+[7.656s] -- looking for PCL_TRACKING
+[7.658s] -- looking for PCL_RECOGNITION
+[7.660s] -- looking for PCL_STEREO
+[7.661s] -- looking for PCL_APPS
+[7.664s] -- looking for PCL_IN_HAND_SCANNER
+[7.665s] -- looking for PCL_MODELER
+[7.666s] -- looking for PCL_POINT_CLOUD_EDITOR
+[7.667s] -- looking for PCL_OUTOFCORE
+[7.669s] -- looking for PCL_PEOPLE
+[7.676s] -- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[7.769s] -- Found lslidar_msgs: 1.2.0 (/home/fastbot/ros2_ws/install/lslidar_msgs/share/lslidar_msgs/cmake)
+[7.839s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[8.025s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[8.613s] -- Configuring done
+[9.319s] -- Generating done
+[9.387s] -- Build files have been written to: /home/fastbot/ros2_ws/build/lslidar_driver
+[9.609s] [35m[1mConsolidate compiler generated dependencies of target lslidar_driver_node[0m
+[10.493s] [100%] Built target lslidar_driver_node
+[10.535s] Invoked command in '/home/fastbot/ros2_ws/real/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/lslidar_driver -- -j4 -l4
+[10.546s] Invoking command in '/home/fastbot/ros2_ws/real/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/lslidar_driver
+[10.573s] -- Install configuration: ""
+[10.573s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/launch
+[10.575s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/launch/lslidar_double_launch.py
+[10.575s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/launch/lslidar_launch.py
+[10.575s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params
+[10.576s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_1.yaml
+[10.577s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10.yaml
+[10.577s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_2.yaml
+[10.577s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/rviz
+[10.578s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz
+[10.581s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node
+[10.582s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver
+[10.583s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver
+[10.584s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh
+[10.584s] -- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv
+[10.586s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/path.sh
+[10.586s] -- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/environment/path.dsv
+[10.587s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.bash
+[10.588s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.sh
+[10.588s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.zsh
+[10.589s] -- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/local_setup.dsv
+[10.590s] -- Installing: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/package.dsv
+[10.591s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver
+[10.592s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.593s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.593s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake
+[10.594s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake
+[10.594s] -- Up-to-date: /home/fastbot/ros2_ws/install/lslidar_driver/share/lslidar_driver/package.xml
+[10.601s] Invoked command in '/home/fastbot/ros2_ws/real/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/lslidar_driver

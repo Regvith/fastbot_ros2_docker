@@ -1,0 +1,46 @@
+[0.175s] Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_slam_real -- -j4 -l4
+[0.427s] Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_slam_real -- -j4 -l4
+[0.476s] Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_slam_real
+[0.518s] -- Install configuration: ""
+[0.537s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch
+[0.545s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/cartographer.launch.py
+[0.546s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/localization.launch.py
+[0.546s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/map_server.launch.py
+[0.547s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/launch/pathplanner.launch.py
+[0.548s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config
+[0.548s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/recovery.yaml
+[0.548s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/planner_server.yaml
+[0.553s] -- Installing: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/cartographer.lua
+[0.555s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/controller.yaml
+[0.556s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/behavior.xml
+[0.557s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/amcl_config.yaml
+[0.557s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/config/bt_navigator.yaml
+[0.558s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps
+[0.560s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment2.pgm
+[0.561s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment.pgm
+[0.562s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment_rotated2.pgm
+[0.563s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/cozy_room.pgm
+[0.563s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment2.yaml
+[0.564s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/cozy_room.yaml
+[0.569s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_indoor_scenario_edited_map_hector_mapping.pgm
+[0.570s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment_rotated.pgm
+[0.570s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_indoor_scenario_edited_map_hector_mapping.yaml
+[0.572s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/maps/small_apartment.yaml
+[0.573s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/rviz
+[0.574s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/rviz/nav.rviz
+[0.575s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/ament_index/resource_index/package_run_dependencies/fastbot_slam_real
+[0.577s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/ament_index/resource_index/parent_prefix_path/fastbot_slam_real
+[0.578s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/ament_prefix_path.sh
+[0.578s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/ament_prefix_path.dsv
+[0.579s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/path.sh
+[0.579s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/environment/path.dsv
+[0.580s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.bash
+[0.581s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.sh
+[0.582s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.zsh
+[0.583s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/local_setup.dsv
+[0.584s] -- Installing: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.dsv
+[0.585s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/ament_index/resource_index/packages/fastbot_slam_real
+[0.586s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/cmake/fastbot_slam_realConfig.cmake
+[0.586s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/cmake/fastbot_slam_realConfig-version.cmake
+[0.587s] -- Up-to-date: /home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.xml
+[0.603s] Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_slam_real

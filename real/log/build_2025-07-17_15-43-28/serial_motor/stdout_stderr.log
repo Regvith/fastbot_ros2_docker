@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/serial_motor/serial_motor.egg-info
+writing ../../build/serial_motor/serial_motor.egg-info/PKG-INFO
+writing dependency_links to ../../build/serial_motor/serial_motor.egg-info/dependency_links.txt
+writing entry points to ../../build/serial_motor/serial_motor.egg-info/entry_points.txt
+writing requirements to ../../build/serial_motor/serial_motor.egg-info/requires.txt
+writing top-level names to ../../build/serial_motor/serial_motor.egg-info/top_level.txt
+writing manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'
+reading manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'
+writing manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/fastbot/ros2_ws/build/serial_motor/build
+creating /home/fastbot/ros2_ws/build/serial_motor/build/lib
+creating /home/fastbot/ros2_ws/build/serial_motor/build/lib/serial_motor
+copying serial_motor/__init__.py -> /home/fastbot/ros2_ws/build/serial_motor/build/lib/serial_motor
+copying serial_motor/motor_driver.py -> /home/fastbot/ros2_ws/build/serial_motor/build/lib/serial_motor
+running install
+running install_lib
+creating /home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages/serial_motor
+copying /home/fastbot/ros2_ws/build/serial_motor/build/lib/serial_motor/__init__.py -> /home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages/serial_motor
+copying /home/fastbot/ros2_ws/build/serial_motor/build/lib/serial_motor/motor_driver.py -> /home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages/serial_motor
+byte-compiling /home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages/serial_motor/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages/serial_motor/motor_driver.py to motor_driver.cpython-310.pyc
+running install_data
+creating /home/fastbot/ros2_ws/install/serial_motor/share/ament_index
+creating /home/fastbot/ros2_ws/install/serial_motor/share/ament_index/resource_index
+creating /home/fastbot/ros2_ws/install/serial_motor/share/ament_index/resource_index/packages
+copying resource/serial_motor -> /home/fastbot/ros2_ws/install/serial_motor/share/ament_index/resource_index/packages
+copying package.xml -> /home/fastbot/ros2_ws/install/serial_motor/share/serial_motor
+creating /home/fastbot/ros2_ws/install/serial_motor/share/serial_motor/launch
+copying launch/serial_motor.launch.py -> /home/fastbot/ros2_ws/install/serial_motor/share/serial_motor/launch
+running install_egg_info
+Copying ../../build/serial_motor/serial_motor.egg-info to /home/fastbot/ros2_ws/install/serial_motor/lib/python3.10/site-packages/serial_motor-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motor_driver script to /home/fastbot/ros2_ws/install/serial_motor/lib/serial_motor
+writing list of installed files to '/home/fastbot/ros2_ws/build/serial_motor/install.log'

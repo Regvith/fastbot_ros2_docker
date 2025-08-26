@@ -1,0 +1,566 @@
+[0.446s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.446s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8af71420>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8b106890>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8b106890>>)
+[1.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/fastbot/ros2_ws/real'
+[1.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.302s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.302s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.303s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.303s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.303s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'ignore'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'ignore_ament_install'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extensions ['colcon_pkg']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'colcon_pkg'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extensions ['colcon_meta']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'colcon_meta'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extensions ['ros']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'ros'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extensions ['cmake', 'python']
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'cmake'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'python'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extensions ['python_setup_py']
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver) by extension 'python_setup_py'
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extension 'ignore'
+[1.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extension 'ignore_ament_install'
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extensions ['colcon_pkg']
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extension 'colcon_pkg'
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extensions ['colcon_meta']
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extension 'colcon_meta'
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extensions ['ros']
+[1.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_driver) by extension 'ros'
+[1.322s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Lslidar_ROS2_driver/lslidar_driver' with type 'ros.ament_cmake' and name 'lslidar_driver'
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extension 'ignore'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extension 'ignore_ament_install'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extensions ['colcon_pkg']
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extension 'colcon_pkg'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extensions ['colcon_meta']
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extension 'colcon_meta'
+[1.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extensions ['ros']
+[1.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/Lslidar_ROS2_driver/lslidar_msgs) by extension 'ros'
+[1.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Lslidar_ROS2_driver/lslidar_msgs' with type 'ros.ament_cmake' and name 'lslidar_msgs'
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extension 'ignore'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extension 'ignore_ament_install'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extensions ['colcon_pkg']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extension 'colcon_pkg'
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extensions ['colcon_meta']
+[1.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extension 'colcon_meta'
+[1.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extensions ['ros']
+[1.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_bringup) by extension 'ros'
+[1.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fastbot_bringup' with type 'ros.ament_cmake' and name 'fastbot_bringup'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extension 'ignore'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extension 'ignore_ament_install'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extensions ['colcon_pkg']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extension 'colcon_pkg'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extensions ['colcon_meta']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extension 'colcon_meta'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extensions ['ros']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_description) by extension 'ros'
+[1.336s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fastbot_description' with type 'ros.ament_cmake' and name 'fastbot_description'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extensions ['ignore', 'ignore_ament_install']
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extension 'ignore'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extension 'ignore_ament_install'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extensions ['colcon_pkg']
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extension 'colcon_pkg'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extensions ['colcon_meta']
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extension 'colcon_meta'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extensions ['ros']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/fastbot_slam_real) by extension 'ros'
+[1.340s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fastbot_slam_real' with type 'ros.ament_cmake' and name 'fastbot_slam_real'
+[1.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extensions ['ignore', 'ignore_ament_install']
+[1.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'ignore'
+[1.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'ignore_ament_install'
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extensions ['colcon_pkg']
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'colcon_pkg'
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extensions ['colcon_meta']
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'colcon_meta'
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extensions ['ros']
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'ros'
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extensions ['cmake', 'python']
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'cmake'
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'python'
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extensions ['python_setup_py']
+[1.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/msg) by extension 'python_setup_py'
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extensions ['ignore', 'ignore_ament_install']
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extension 'ignore'
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extension 'ignore_ament_install'
+[1.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extensions ['colcon_pkg']
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extension 'colcon_pkg'
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extensions ['colcon_meta']
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extension 'colcon_meta'
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extensions ['ros']
+[1.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor) by extension 'ros'
+[1.347s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor' with type 'ros.ament_python' and name 'serial_motor'
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extension 'ignore'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extension 'ignore_ament_install'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extensions ['colcon_pkg']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extension 'colcon_pkg'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extensions ['colcon_meta']
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extension 'colcon_meta'
+[1.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extensions ['ros']
+[1.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_msgs) by extension 'ros'
+[1.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_msgs' with type 'ros.ament_cmake' and name 'serial_motor_msgs'
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.485s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/fastbot/ros2_ws/real/install
+[1.488s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/fastbot/ros2_ws/install
+[1.499s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/humble
+[1.505s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.675s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'cmake_args' from command line to 'None'
+[1.675s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'cmake_target' from command line to 'None'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.676s] Level 5:colcon.colcon_core.verb:set package 'fastbot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.676s] DEBUG:colcon.colcon_core.verb:Building package 'fastbot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/fastbot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/fastbot_bringup', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/fastbot_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'cmake_args' from command line to 'None'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'cmake_target' from command line to 'None'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.678s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.679s] Level 5:colcon.colcon_core.verb:set package 'fastbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.679s] DEBUG:colcon.colcon_core.verb:Building package 'fastbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/fastbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/fastbot_description', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/fastbot_description', 'symlink_install': False, 'test_result_base': None}
+[1.680s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'cmake_args' from command line to 'None'
+[1.680s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'cmake_target' from command line to 'None'
+[1.680s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.681s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'cmake_clean_cache' from command line to 'False'
+[1.681s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'cmake_clean_first' from command line to 'False'
+[1.681s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'cmake_force_configure' from command line to 'False'
+[1.681s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'ament_cmake_args' from command line to 'None'
+[1.681s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'catkin_cmake_args' from command line to 'None'
+[1.681s] Level 5:colcon.colcon_core.verb:set package 'fastbot_slam_real' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.681s] DEBUG:colcon.colcon_core.verb:Building package 'fastbot_slam_real' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/fastbot_slam_real', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/fastbot_slam_real', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/fastbot_slam_real', 'symlink_install': False, 'test_result_base': None}
+[1.682s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_args' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_target' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.683s] Level 5:colcon.colcon_core.verb:set package 'lslidar_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.683s] DEBUG:colcon.colcon_core.verb:Building package 'lslidar_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/lslidar_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/lslidar_msgs', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/Lslidar_ROS2_driver/lslidar_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'cmake_args' from command line to 'None'
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'cmake_target' from command line to 'None'
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.685s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.686s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.686s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.686s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/serial_motor_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/serial_motor_msgs', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/serial_motor_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.687s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_args' from command line to 'None'
+[1.687s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_target' from command line to 'None'
+[1.687s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.687s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.688s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.688s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.688s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.688s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.688s] Level 5:colcon.colcon_core.verb:set package 'lslidar_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.688s] DEBUG:colcon.colcon_core.verb:Building package 'lslidar_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/lslidar_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/lslidar_driver', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/Lslidar_ROS2_driver/lslidar_driver', 'symlink_install': False, 'test_result_base': None}
+[1.689s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_args' from command line to 'None'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_target' from command line to 'None'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_clean_first' from command line to 'False'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'cmake_force_configure' from command line to 'False'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'ament_cmake_args' from command line to 'None'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.690s] Level 5:colcon.colcon_core.verb:set package 'serial_motor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.690s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fastbot/ros2_ws/real/build/serial_motor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fastbot/ros2_ws/real/install/serial_motor', 'merge_install': False, 'path': '/home/fastbot/ros2_ws/real/src/serial_motor', 'symlink_install': False, 'test_result_base': None}
+[1.691s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.694s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.695s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/Lslidar_ROS2_driver/lslidar_msgs' with build type 'ament_cmake'
+[1.696s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fastbot/ros2_ws/real/src/Lslidar_ROS2_driver/lslidar_msgs'
+[1.705s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.706s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.707s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.731s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/serial_motor_msgs' with build type 'ament_cmake'
+[1.732s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fastbot/ros2_ws/real/src/serial_motor_msgs'
+[1.733s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.733s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.759s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/fastbot_bringup' with build type 'ament_cmake'
+[1.759s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fastbot/ros2_ws/real/src/fastbot_bringup'
+[1.760s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.761s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.787s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/fastbot_description' with build type 'ament_cmake'
+[1.788s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fastbot/ros2_ws/real/src/fastbot_description'
+[1.789s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.789s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/lslidar_msgs -- -j4 -l4
+[1.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/serial_motor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/serial_motor_msgs -- -j4 -l4
+[1.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_bringup -- -j4 -l4
+[1.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_description -- -j4 -l4
+[3.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_bringup -- -j4 -l4
+[3.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_bringup
+[3.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_description -- -j4 -l4
+[3.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_description
+[3.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastbot_bringup)
+[3.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_bringup
+[3.732s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup' for CMake module files
+[3.740s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup' for CMake config files
+[3.746s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastbot_bringup', 'cmake_prefix_path')
+[3.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/hook/cmake_prefix_path.ps1'
+[3.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/hook/cmake_prefix_path.dsv'
+[3.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/hook/cmake_prefix_path.sh'
+[3.765s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/bin'
+[3.765s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/lib/pkgconfig/fastbot_bringup.pc'
+[3.767s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/lib/python3.10/site-packages'
+[3.769s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/bin'
+[3.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.ps1'
+[3.777s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.dsv'
+[3.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.sh'
+[3.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.bash'
+[3.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.zsh'
+[3.797s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/colcon-core/packages/fastbot_bringup)
+[3.800s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastbot_bringup)
+[3.801s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup' for CMake module files
+[3.804s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup' for CMake config files
+[3.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastbot_bringup', 'cmake_prefix_path')
+[3.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/hook/cmake_prefix_path.ps1'
+[3.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/hook/cmake_prefix_path.dsv'
+[3.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/hook/cmake_prefix_path.sh'
+[3.815s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/bin'
+[3.816s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/lib/pkgconfig/fastbot_bringup.pc'
+[3.817s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/lib/python3.10/site-packages'
+[3.818s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_bringup/bin'
+[3.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.ps1'
+[3.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.dsv'
+[3.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.sh'
+[3.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.bash'
+[3.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/fastbot_bringup/package.zsh'
+[3.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/fastbot_bringup/share/colcon-core/packages/fastbot_bringup)
+[3.839s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/fastbot_slam_real' with build type 'ament_cmake'
+[3.840s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fastbot/ros2_ws/real/src/fastbot_slam_real'
+[3.841s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.842s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastbot_description)
+[3.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_description
+[3.897s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description' for CMake module files
+[3.900s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description' for CMake config files
+[3.902s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastbot_description', 'cmake_prefix_path')
+[3.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/hook/cmake_prefix_path.ps1'
+[3.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/hook/cmake_prefix_path.dsv'
+[3.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/hook/cmake_prefix_path.sh'
+[3.911s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/bin'
+[3.912s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/lib/pkgconfig/fastbot_description.pc'
+[3.913s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/lib/python3.10/site-packages'
+[3.914s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/bin'
+[3.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.ps1'
+[3.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.dsv'
+[3.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.sh'
+[3.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.bash'
+[3.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.zsh'
+[3.932s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/fastbot_description/share/colcon-core/packages/fastbot_description)
+[3.935s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastbot_description)
+[3.936s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description' for CMake module files
+[3.939s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description' for CMake config files
+[3.940s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastbot_description', 'cmake_prefix_path')
+[3.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/hook/cmake_prefix_path.ps1'
+[3.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/hook/cmake_prefix_path.dsv'
+[3.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/hook/cmake_prefix_path.sh'
+[3.950s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/bin'
+[3.950s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/lib/pkgconfig/fastbot_description.pc'
+[3.951s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/lib/python3.10/site-packages'
+[3.953s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_description/bin'
+[3.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.ps1'
+[3.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.dsv'
+[3.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.sh'
+[3.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.bash'
+[3.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_description/share/fastbot_description/package.zsh'
+[3.970s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/fastbot_description/share/colcon-core/packages/fastbot_description)
+[3.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_slam_real -- -j4 -l4
+[4.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/fastbot_slam_real -- -j4 -l4
+[4.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_slam_real
+[4.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastbot_slam_real)
+[4.301s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real' for CMake module files
+[4.305s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real' for CMake config files
+[4.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastbot_slam_real', 'cmake_prefix_path')
+[4.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/hook/cmake_prefix_path.ps1'
+[4.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/fastbot_slam_real' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/fastbot_slam_real
+[4.320s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/hook/cmake_prefix_path.dsv'
+[4.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/hook/cmake_prefix_path.sh'
+[4.329s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/bin'
+[4.330s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/lib/pkgconfig/fastbot_slam_real.pc'
+[4.331s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/lib/python3.10/site-packages'
+[4.332s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/bin'
+[4.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.ps1'
+[4.336s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.dsv'
+[4.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.sh'
+[4.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.bash'
+[4.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.zsh'
+[4.347s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/colcon-core/packages/fastbot_slam_real)
+[4.350s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fastbot_slam_real)
+[4.352s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real' for CMake module files
+[4.355s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real' for CMake config files
+[4.357s] Level 1:colcon.colcon_core.shell:create_environment_hook('fastbot_slam_real', 'cmake_prefix_path')
+[4.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/hook/cmake_prefix_path.ps1'
+[4.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/hook/cmake_prefix_path.dsv'
+[4.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/hook/cmake_prefix_path.sh'
+[4.365s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/bin'
+[4.366s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/lib/pkgconfig/fastbot_slam_real.pc'
+[4.367s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/lib/python3.10/site-packages'
+[4.368s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/bin'
+[4.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.ps1'
+[4.372s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.dsv'
+[4.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.sh'
+[4.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.bash'
+[4.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/fastbot_slam_real/package.zsh'
+[4.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/fastbot_slam_real/share/colcon-core/packages/fastbot_slam_real)
+[10.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/serial_motor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/serial_motor_msgs -- -j4 -l4
+[10.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/serial_motor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/serial_motor_msgs
+[10.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_msgs)
+[10.634s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs' for CMake module files
+[10.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/serial_motor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/serial_motor_msgs
+[10.639s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs' for CMake config files
+[10.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_msgs', 'cmake_prefix_path')
+[10.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/cmake_prefix_path.ps1'
+[10.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/cmake_prefix_path.dsv'
+[10.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/cmake_prefix_path.sh'
+[10.651s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib'
+[10.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_msgs', 'ld_library_path_lib')
+[10.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/ld_library_path_lib.ps1'
+[10.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/ld_library_path_lib.dsv'
+[10.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/ld_library_path_lib.sh'
+[10.659s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/bin'
+[10.660s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib/pkgconfig/serial_motor_msgs.pc'
+[10.662s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib/python3.10/site-packages'
+[10.663s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/bin'
+[10.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.ps1'
+[10.667s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.dsv'
+[10.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.sh'
+[10.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.bash'
+[10.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.zsh'
+[10.676s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/colcon-core/packages/serial_motor_msgs)
+[10.680s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_msgs)
+[10.681s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs' for CMake module files
+[10.685s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs' for CMake config files
+[10.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_msgs', 'cmake_prefix_path')
+[10.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/cmake_prefix_path.ps1'
+[10.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/cmake_prefix_path.dsv'
+[10.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/cmake_prefix_path.sh'
+[10.696s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib'
+[10.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_msgs', 'ld_library_path_lib')
+[10.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/ld_library_path_lib.ps1'
+[10.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/ld_library_path_lib.dsv'
+[10.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/hook/ld_library_path_lib.sh'
+[10.704s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/bin'
+[10.704s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib/pkgconfig/serial_motor_msgs.pc'
+[10.705s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib/python3.10/site-packages'
+[10.706s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/bin'
+[10.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.ps1'
+[10.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.dsv'
+[10.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.sh'
+[10.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.bash'
+[10.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/serial_motor_msgs/package.zsh'
+[10.721s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/serial_motor_msgs/share/colcon-core/packages/serial_motor_msgs)
+[10.723s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/serial_motor' with build type 'ament_python'
+[10.724s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor', 'ament_prefix_path')
+[10.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/hook/ament_prefix_path.ps1'
+[10.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/hook/ament_prefix_path.dsv'
+[10.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/hook/ament_prefix_path.sh'
+[10.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.735s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.058s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fastbot/ros2_ws/real/src/serial_motor'
+[12.059s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.059s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/lslidar_msgs -- -j4 -l4
+[12.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/lslidar_msgs
+[12.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lslidar_msgs)
+[12.468s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs' for CMake module files
+[12.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/lslidar_msgs
+[12.474s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs' for CMake config files
+[12.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('lslidar_msgs', 'cmake_prefix_path')
+[12.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.ps1'
+[12.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.dsv'
+[12.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.sh'
+[12.486s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib'
+[12.487s] Level 1:colcon.colcon_core.shell:create_environment_hook('lslidar_msgs', 'ld_library_path_lib')
+[12.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.ps1'
+[12.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.dsv'
+[12.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.sh'
+[12.494s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/bin'
+[12.495s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib/pkgconfig/lslidar_msgs.pc'
+[12.496s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib/python3.10/site-packages'
+[12.497s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/bin'
+[12.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.ps1'
+[12.501s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.dsv'
+[12.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.sh'
+[12.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.bash'
+[12.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.zsh'
+[12.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/colcon-core/packages/lslidar_msgs)
+[12.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lslidar_msgs)
+[12.514s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs' for CMake module files
+[12.518s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs' for CMake config files
+[12.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('lslidar_msgs', 'cmake_prefix_path')
+[12.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.ps1'
+[12.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.dsv'
+[12.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/cmake_prefix_path.sh'
+[12.531s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib'
+[12.531s] Level 1:colcon.colcon_core.shell:create_environment_hook('lslidar_msgs', 'ld_library_path_lib')
+[12.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.ps1'
+[12.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.dsv'
+[12.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/hook/ld_library_path_lib.sh'
+[12.539s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/bin'
+[12.539s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib/pkgconfig/lslidar_msgs.pc'
+[12.540s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib/python3.10/site-packages'
+[12.541s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_msgs/bin'
+[12.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.ps1'
+[12.547s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.dsv'
+[12.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.sh'
+[12.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.bash'
+[12.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/lslidar_msgs/package.zsh'
+[12.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/lslidar_msgs/share/colcon-core/packages/lslidar_msgs)
+[12.559s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fastbot/ros2_ws/real/src/Lslidar_ROS2_driver/lslidar_driver' with build type 'ament_cmake'
+[12.559s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fastbot/ros2_ws/real/src/Lslidar_ROS2_driver/lslidar_driver'
+[12.561s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.561s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/real/install/serial_motor_msgs:/home/fastbot/ros2_ws/real/install/lslidar_driver:/home/fastbot/ros2_ws/real/install/fastbot_slam_real:/home/fastbot/ros2_ws/real/install/fastbot_description:/home/fastbot/ros2_ws/real/install/fastbot_bringup:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/lslidar_driver -- -j4 -l4
+[14.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/src/serial_motor': PYTHONPATH=/home/fastbot/ros2_ws/real/build/serial_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_motor build --build-base /home/fastbot/ros2_ws/real/build/serial_motor/build install --record /home/fastbot/ros2_ws/real/build/serial_motor/install.log --single-version-externally-managed install_data
+[15.652s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor' for CMake module files
+[15.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/src/serial_motor' returned '0': PYTHONPATH=/home/fastbot/ros2_ws/real/build/serial_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_motor build --build-base /home/fastbot/ros2_ws/real/build/serial_motor/build install --record /home/fastbot/ros2_ws/real/build/serial_motor/install.log --single-version-externally-managed install_data
+[15.656s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor' for CMake config files
+[15.659s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor/lib'
+[15.660s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor/bin'
+[15.660s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor/lib/pkgconfig/serial_motor.pc'
+[15.661s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages'
+[15.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor', 'pythonpath')
+[15.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/hook/pythonpath.ps1'
+[15.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/hook/pythonpath.dsv'
+[15.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/hook/pythonpath.sh'
+[15.669s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/serial_motor/bin'
+[15.669s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor)
+[15.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/package.ps1'
+[15.672s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/package.dsv'
+[15.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/package.sh'
+[15.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/package.bash'
+[15.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/package.zsh'
+[15.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/serial_motor/share/colcon-core/packages/serial_motor)
+[20.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/real/install/serial_motor_msgs:/home/fastbot/ros2_ws/real/install/lslidar_driver:/home/fastbot/ros2_ws/real/install/fastbot_slam_real:/home/fastbot/ros2_ws/real/install/fastbot_description:/home/fastbot/ros2_ws/real/install/fastbot_bringup:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/fastbot/ros2_ws/real/build/lslidar_driver -- -j4 -l4
+[20.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fastbot/ros2_ws/real/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/real/install/serial_motor_msgs:/home/fastbot/ros2_ws/real/install/lslidar_driver:/home/fastbot/ros2_ws/real/install/fastbot_slam_real:/home/fastbot/ros2_ws/real/install/fastbot_description:/home/fastbot/ros2_ws/real/install/fastbot_bringup:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/lslidar_driver
+[20.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lslidar_driver)
+[20.346s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver' for CMake module files
+[20.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fastbot/ros2_ws/real/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs:/home/fastbot/ros2_ws/real/install/serial_motor_msgs:/home/fastbot/ros2_ws/real/install/lslidar_driver:/home/fastbot/ros2_ws/real/install/fastbot_slam_real:/home/fastbot/ros2_ws/real/install/fastbot_description:/home/fastbot/ros2_ws/real/install/fastbot_bringup:/home/fastbot/ros2_ws/real/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor:/home/fastbot/ros2_ws/install/serial_motor_msgs:/home/fastbot/ros2_ws/install/lslidar_driver:/home/fastbot/ros2_ws/install/lslidar_msgs:/home/fastbot/ros2_ws/install/fastbot_description:/home/fastbot/ros2_ws/install/fastbot_bringup:/opt/ros/humble LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/lslidar_msgs/lib:/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/serial_motor_msgs/lib:/home/fastbot/ros2_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/fastbot/ros2_ws/real/build/lslidar_driver
+[20.351s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver' for CMake config files
+[20.353s] Level 1:colcon.colcon_core.shell:create_environment_hook('lslidar_driver', 'cmake_prefix_path')
+[20.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.ps1'
+[20.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.dsv'
+[20.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.sh'
+[20.362s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/lib'
+[20.362s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/bin'
+[20.363s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/lib/pkgconfig/lslidar_driver.pc'
+[20.364s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/lib/python3.10/site-packages'
+[20.365s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/bin'
+[20.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.ps1'
+[20.368s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.dsv'
+[20.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.sh'
+[20.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.bash'
+[20.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.zsh'
+[20.376s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/lslidar_driver/share/colcon-core/packages/lslidar_driver)
+[20.379s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lslidar_driver)
+[20.380s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver' for CMake module files
+[20.383s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver' for CMake config files
+[20.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('lslidar_driver', 'cmake_prefix_path')
+[20.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.ps1'
+[20.387s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.dsv'
+[20.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/hook/cmake_prefix_path.sh'
+[20.392s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/lib'
+[20.392s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/bin'
+[20.392s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/lib/pkgconfig/lslidar_driver.pc'
+[20.393s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/lib/python3.10/site-packages'
+[20.394s] Level 1:colcon.colcon_core.environment:checking '/home/fastbot/ros2_ws/real/install/lslidar_driver/bin'
+[20.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.ps1'
+[20.398s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.dsv'
+[20.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.sh'
+[20.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.bash'
+[20.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/fastbot/ros2_ws/real/install/lslidar_driver/share/lslidar_driver/package.zsh'
+[20.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fastbot/ros2_ws/real/install/lslidar_driver/share/colcon-core/packages/lslidar_driver)
+[20.407s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.410s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.433s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[20.433s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.433s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.433s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.436s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[20.437s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.438s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fastbot/ros2_ws/real/install/local_setup.ps1'
+[20.442s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fastbot/ros2_ws/real/install/_local_setup_util_ps1.py'
+[20.448s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fastbot/ros2_ws/real/install/setup.ps1'
+[20.456s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fastbot/ros2_ws/real/install/local_setup.sh'
+[20.459s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fastbot/ros2_ws/real/install/_local_setup_util_sh.py'
+[20.461s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fastbot/ros2_ws/real/install/setup.sh'
+[20.469s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fastbot/ros2_ws/real/install/local_setup.bash'
+[20.471s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fastbot/ros2_ws/real/install/setup.bash'
+[20.480s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fastbot/ros2_ws/real/install/local_setup.zsh'
+[20.483s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fastbot/ros2_ws/real/install/setup.zsh'

@@ -1,0 +1,50 @@
+# How to create the docker image: docker build -t my_nginx:v0 .
+
+# Let's use "ubuntu:20.04" as the base of our image
+FROM regvith/regvith-cp22:fastbot-ros2-slam
+
+# Exporting a variable to install pkgs without any interactive questions
+ENV DEBIAN_FRONTEND=noninteractive
+# Install python3 http.server & rosbridge
+
+
+# Copy static web files
+WORKDIR /ros2_ws/src/fastbot/ros2_website
+# Expose web and rosbridge ports
+EXPOSE 7000 9090
+RUN apt update && apt install -y \
+    python3-pip \
+    git \
+    wget \
+    curl \
+    gnupg2 \
+    && rm -rf /var/lib/apt/lists/*
+#RUN pip3 install pymongo && pip3 install tornado
+# Create workspace and clone rosbridge
+#RUN rm -rf /ros2_ws/src/rosbridge_suite && git clone --branch humble --single-branch https://github.com/RobotWebTools/rosbridge_suite.git 
+# Start both http server and rosbridge in the same container
+CMD bash -c "source /opt/ros/humble/setup.bash && \
+             python3 -m http.server 7000"
+# Installing nginx
+RUN apt-get update \
+    && apt-get install -y nginx  \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copying the local entrypoint.sh file to /entrypoint.sh in the docker image
+COPY ./entrypoint.sh /entrypoint.sh
+
+# Copying the local my_webpage to /var/www/html in the docker image
+#COPY fastbot/ros2_website/ /var/www/html
+# Replace root in nginx default config to match volume mount path
+RUN sed -i 's|root /var/www/html;|root /usr/share/nginx/html;|g' /etc/nginx/sites-available/default
+
+CMD bash -c "source /opt/ros/humble/setup.bash && sudo service nginx start && \
+             ros2 launch rosbridge_server rosbridge_websocket_launch.xml port:=9090 websocket_external_port:=9090 --screen"
+
+# /bin/bash is the command we want to execute when running a docker container
+ENTRYPOINT ["/bin/bash"]
+
+# We want /bin/bash to execute our /entrypoint.sh when container starts
+CMD ["/entrypoint.sh"]
+
+

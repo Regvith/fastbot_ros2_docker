@@ -1,0 +1,39 @@
+[4.690s] Invoking command in '/home/fastbot/ros2_ws/real/src/serial_motor': AMENT_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/serial_motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/serial_motor_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fastbot/ros2_ws/real/build/serial_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/real/install/serial_motor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_motor build --build-base /home/fastbot/ros2_ws/real/build/serial_motor/build install --record /home/fastbot/ros2_ws/real/build/serial_motor/install.log --single-version-externally-managed install_data
+[6.257s] running egg_info
+[6.261s] creating ../../build/serial_motor/serial_motor.egg-info
+[6.262s] writing ../../build/serial_motor/serial_motor.egg-info/PKG-INFO
+[6.263s] writing dependency_links to ../../build/serial_motor/serial_motor.egg-info/dependency_links.txt
+[6.264s] writing entry points to ../../build/serial_motor/serial_motor.egg-info/entry_points.txt
+[6.265s] writing requirements to ../../build/serial_motor/serial_motor.egg-info/requires.txt
+[6.266s] writing top-level names to ../../build/serial_motor/serial_motor.egg-info/top_level.txt
+[6.268s] writing manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'
+[6.278s] reading manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'
+[6.282s] writing manifest file '../../build/serial_motor/serial_motor.egg-info/SOURCES.txt'
+[6.283s] running build
+[6.283s] running build_py
+[6.284s] creating /home/fastbot/ros2_ws/real/build/serial_motor/build
+[6.285s] creating /home/fastbot/ros2_ws/real/build/serial_motor/build/lib
+[6.285s] creating /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor
+[6.286s] copying serial_motor/__init__.py -> /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor
+[6.286s] copying serial_motor/motor_driver.py -> /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor
+[6.289s] running install
+[6.291s] running install_lib
+[6.295s] creating /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor
+[6.296s] copying /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor/__init__.py -> /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor
+[6.297s] copying /home/fastbot/ros2_ws/real/build/serial_motor/build/lib/serial_motor/motor_driver.py -> /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor
+[6.300s] byte-compiling /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor/__init__.py to __init__.cpython-310.pyc
+[6.305s] byte-compiling /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor/motor_driver.py to motor_driver.cpython-310.pyc
+[6.312s] running install_data
+[6.313s] creating /home/fastbot/ros2_ws/real/install/serial_motor/share/ament_index
+[6.314s] creating /home/fastbot/ros2_ws/real/install/serial_motor/share/ament_index/resource_index
+[6.315s] creating /home/fastbot/ros2_ws/real/install/serial_motor/share/ament_index/resource_index/packages
+[6.315s] copying resource/serial_motor -> /home/fastbot/ros2_ws/real/install/serial_motor/share/ament_index/resource_index/packages
+[6.316s] copying package.xml -> /home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor
+[6.317s] creating /home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/launch
+[6.318s] copying launch/serial_motor.launch.py -> /home/fastbot/ros2_ws/real/install/serial_motor/share/serial_motor/launch
+[6.318s] running install_egg_info
+[6.331s] Copying ../../build/serial_motor/serial_motor.egg-info to /home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages/serial_motor-0.0.0-py3.10.egg-info
+[6.342s] running install_scripts
+[6.436s] Installing motor_driver script to /home/fastbot/ros2_ws/real/install/serial_motor/lib/serial_motor
+[6.439s] writing list of installed files to '/home/fastbot/ros2_ws/real/build/serial_motor/install.log'
+[6.593s] Invoked command in '/home/fastbot/ros2_ws/real/src/serial_motor' returned '0': AMENT_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/serial_motor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/fastbot/ros2_ws/real/install/serial_motor_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/fastbot/ros2_ws/real/install/serial_motor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/fastbot/ros2_ws/real/build/serial_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fastbot/ros2_ws/real/install/serial_motor/lib/python3.10/site-packages:/home/fastbot/ros2_ws/real/install/serial_motor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/serial_motor build --build-base /home/fastbot/ros2_ws/real/build/serial_motor/build install --record /home/fastbot/ros2_ws/real/build/serial_motor/install.log --single-version-externally-managed install_data

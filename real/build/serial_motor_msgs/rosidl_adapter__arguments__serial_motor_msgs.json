@@ -1,0 +1,8 @@
+{
+  "package_name": "serial_motor_msgs",
+  "non_idl_tuples": [
+    "/home/fastbot/ros2_ws/src/serial_motor_msgs:msg/EncoderVals.msg",
+    "/home/fastbot/ros2_ws/src/serial_motor_msgs:msg/MotorCommands.msg",
+    "/home/fastbot/ros2_ws/src/serial_motor_msgs:msg/MotorVels.msg"
+  ]
+}

@@ -1,0 +1,3 @@
+/home/fastbot/ros2_ws/build/serial_motor_msgs/rosidl_adapter/serial_motor_msgs:msg/EncoderVals.idl
+/home/fastbot/ros2_ws/build/serial_motor_msgs/rosidl_adapter/serial_motor_msgs:msg/MotorCommands.idl
+/home/fastbot/ros2_ws/build/serial_motor_msgs/rosidl_adapter/serial_motor_msgs:msg/MotorVels.idl
