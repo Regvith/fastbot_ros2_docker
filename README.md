@@ -52,8 +52,10 @@ git clone https://github.com/Regvith/fastbot_ros2_docker
 
 # Skip and go to compose directly
 cd ros2_ws/real
+
 docker build -t real-fastbot .
 
 # compose pull and build
 docker compose pull
+
 docker compose up 
