@@ -22,11 +22,15 @@ docker-compose up
 # For real robot 
 ## Important ## Install docker compose version 2.0 or above, else the setup is bound to fail
 sudo apt update 
+
 sudo apt install docker.io -y 
+
 sudo systemctl start docker 
+
 sudo systemctl enable docker
 
 sudo apt update 
+
 sudo apt install -y ca-certificates curl gnupg lsb-release
 
 sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.docker.com/linux/ubuntu/gpg | 
@@ -39,6 +43,7 @@ $(lsb_release -cs) stable" |
 sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt update
+
  sudo apt install docker-compose-plugin -y
 
 # Git clone the repository inside pi in ros2_ws 
@@ -50,4 +55,5 @@ cd ros2_ws/real
 docker build -t real-fastbot .
 
 # compose pull and build
+docker compose pull
 docker compose up 
