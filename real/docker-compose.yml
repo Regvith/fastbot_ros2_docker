@@ -10,7 +10,7 @@ services:
     privileged: true
     devices:
       - /dev/ttyACM0:/dev/lslidar
-      - /dev/ttyUSB0:/dev/arduino_nano
+      - /dev/ttyUSB0:/dev/ttyUSB0
       - /dev/video0:/dev/video0
       - /dev/vchiq:/dev/vchiq
     tty: true
@@ -30,7 +30,7 @@ services:
     privileged: true
     devices:
       - /dev/ttyACM0:/dev/lslidar
-      - /dev/ttyUSB0:/dev/arduino_nano
+      - /dev/ttyUSB0:/dev/ttyUSB0
       - /dev/video0:/dev/video0
       - /dev/vchiq:/dev/vchiq
     tty: true
